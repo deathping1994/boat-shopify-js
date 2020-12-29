@@ -64,7 +64,7 @@ window.addEventListener('scroll', () =>{
         $('.qsb-wrapper ').css('display','');
     }
 })
-
+if($('.qikify-stickycart-app #wk_find_zipcode')){$('.qikify-stickycart-app #wk_find_zipcode').remove()}
 $(document).on("click touchstart",".qikify-stickycart-app .veriant_sect",function(e){
     var selected_variant = e.target.title
     var selected_variant_id = e.target.id
