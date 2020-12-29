@@ -1,3 +1,5 @@
+
+$(document).on('productDataLoaded',function(){
 function isElementInViewport (el) {
     if (typeof jQuery === "function" && el instanceof jQuery) {
         el = el[0];
@@ -126,6 +128,8 @@ $(document).on('variantImageSelected', '.gallery', function(e, data){
     // locate matching thumbnail
     
   });
+
+ });
 
 // $(document).on('variant_changed',function() {
      
