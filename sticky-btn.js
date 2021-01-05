@@ -36,16 +36,12 @@ form.find(".quantity-submit-row__submit input").css("margin", "auto");
 form.find("label").css("display", "none");
 form.find(".original-selector").css("display", "none");
 
-
-
 var imageLink = $('.show-gallery')[0].href
 var productTitle = $('.product-title')[0].innerHTML
-var currentPrice = $('.current-price')[0].innerHTML
+if($('.current-price')[0]){ var currentPrice = $('.current-price')[0].innerHTML };
+if($('.price')[0]){var currentPrice = $('.price')[0].innerHTML};
 var wasPrice = $('.was-price')[0].innerHTML
 var stickyImageContent = `<div class="qsb-product"><div class="qsb-product__media" style="width: 60px;"><img src="` + imageLink + `" alt="Stone 190"></div><div class="qsb-product__info"><h2 class="qsb-product__title" style="color: rgb(255, 255, 255);">` + productTitle +`</h2><p class="qsb-product__price"><span class="qsb-product__current-price" style="color: rgb(255, 255, 255);">` + currentPrice +`</span><s class="qsb-product__price-compare-at">` + wasPrice +`</s></p></div></div>`
-
-
-
 var y = `<div id="qikify-stickycart-app" class="qikify-stickycart-app">
     <div class="qsb-wrapper  qsb-wrapper--desktop-bottom  qsb-wrapper--mobile-bottom  qsb-wrapper--interactive qsb--active in"
         style="height: 80px; background-color: rgb(0, 0, 0); font-family: Montserrat; font-size: 16px; font-weight: 400; font-style: inherit; letter-spacing: 0px;">
@@ -77,22 +73,12 @@ $(document).on("click touchstart",".qikify-stickycart-app .veriant_sect",functio
 
     $('.qikify-stickycart-app .original-selector option').each(function(count,item){
             if($(item)[0].value === selected_variant_id){$(item).attr("selected","selected");}
-        });
-     
+        });     
 });
-
 
 $(document).on("click touchstart",".qikify-stickycart-app .mobile li",function() {
-     
   $(this).parent().prepend($(this));
- 
 });
-
-// $(".qikify-stickycart-app .prodct_variant  li").click(function() {
-     
-//   $(this).parent().prepend($(this));
- 
-// });
 
 $(document).on("click touchstart",".qikify-stickycart-app .mobile", function(e){
 if(this.classList.contains("hello")){
@@ -104,56 +90,13 @@ if(this.classList.contains("hello")){
     }
 });
 
-
-// $(".qikify-stickycart-app .prodct_variant").click(function(e){
-// if(this.classList.contains("hello")){
-//     this.classList.remove("hello");
-//     $('.qikify-stickycart-app .prodct_variant li').not(":first-child").hide(300);
-// }else {
-//    this.classList.add("hello");
-//     $('.qikify-stickycart-app .prodct_variant li').show(300);
-// }
- 
-// });
-
-$('.qikify-stickycart-app .mobile li').hide(0,function() {  // first hide all `.hide`
-   $('.qikify-stickycart-app .mobile li.activevar').show(); // then show the element with id `#1`
+$('.qikify-stickycart-app .mobile li').hide(0,function() {  
+   $('.qikify-stickycart-app .mobile li.activevar').show();
 });
 
 $(document).on('variantImageSelected', '.gallery', function(e, data){
-    // get image src
     var variantSrc = data.featured_image.src.split('?')[0].replace(/http[s]?:/, '');
     $(".qsb-product__media img").attr("src",variantSrc)
-    // locate matching thumbnail
-    
   });
-
  });
 
-// $(document).on('variant_changed',function() {
-     
-//    var imagelink = $('.show-gallery').filter(function(index,obj) {
-//         return obj.tabIndex==0;
-//     })[0].href;
-//     $(".qsb-product__media img").attr("src",imagelink)
- 
-// });
-
-
-// $(document).on("click touchstart",".qikify-stickycart-app .prodct_variant  li",function() {
-     
-//    var imagelink = $('.show-gallery').filter(function(index,obj) {
-//         return obj.tabIndex==0;
-//     })[0].href;
-//     $(".qsb-product__media img").attr("src",imagelink)
- 
-// });
-
-// $(".qikify-stickycart-app .prodct_variant  li").click(function() {
-     
-//    var imagelink = $('.show-gallery').filter(function(index,obj) {
-//         return obj.tabIndex==0;
-//     })[0].href;
-//     $(".qsb-product__media img").attr("src",imagelink)
- 
-// })
