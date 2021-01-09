@@ -222,14 +222,17 @@ listItems.each(function(idx, li) {
 
 if($("header nav ul li:nth-child(1)").hasClass('breadcrumb__item breadcrumb__item--current') && $("header nav ul li:nth-child(2)").hasClass('breadcrumb__item breadcrumb__item--completed')){
 var x =$("header nav ul li:nth-child(2)").find('.div-1');
-x.removeClass('red');x.addClass('grey');
-	}
+x.removeClass('red');x.addClass('grey');}
+if($("header nav ul li:nth-child(1)").hasClass('breadcrumb__item breadcrumb__item--current') && $("header nav ul li:nth-child(3)").hasClass('breadcrumb__item breadcrumb__item--completed')){
+var x =$("header nav ul li:nth-child(2)").find('.div-1');
+x.removeClass('grey');x.addClass('red');}
 $("header nav ul li").find('.space')[2].remove()
 
 if($("header nav ul li:nth-child(2)").find('.div-1').hasClass('red')){
 $("header nav ul li:nth-child(1)").find('.space').css('color','#ed1d26')
 	}
   else{$("header nav ul li:nth-child(1)").find('.space').css('color','#bdbdbd')}
+
 if($("header nav ul li:nth-child(3)").find('.div-1').hasClass('red')){
 $("header nav ul li:nth-child(2)").find('.space').css('color','#ed1d26')
 	}
