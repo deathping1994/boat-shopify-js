@@ -224,8 +224,8 @@ if($("header nav ul li:nth-child(1)").hasClass('breadcrumb__item breadcrumb__ite
 var x =$("header nav ul li:nth-child(2)").find('.div-1');
 x.removeClass('red');x.addClass('grey');}
 if($("header nav ul li:nth-child(1)").hasClass('breadcrumb__item breadcrumb__item--current') && $("header nav ul li:nth-child(3)").hasClass('breadcrumb__item breadcrumb__item--completed')){
-var x =$("header nav ul li:nth-child(2)").find('.div-1');
-x.removeClass('grey');x.addClass('red');}
+var x =$("header nav ul li:nth-child(3)").find('.div-1');
+x.removeClass('red');x.addClass('grey');}
 $("header nav ul li").find('.space')[2].remove()
 
 if($("header nav ul li:nth-child(2)").find('.div-1').hasClass('red')){
