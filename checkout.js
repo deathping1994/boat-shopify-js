@@ -1,4 +1,4 @@
-$(document).on(`page:load page:change`, function() {
+$(document).on("page:load page:change", function() {
 var style = `<style>
       button#continue_button {font-size: 16px;font-weight: normal!important;padding: 15px 25px!important;}
       #checkout_reduction_code{
