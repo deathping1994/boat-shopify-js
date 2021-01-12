@@ -254,7 +254,7 @@ $('#checkout_shipping_address_zip').on('change', function(){
     if($.inArray(inputPincode,pincodes)===-1){
         $('.address-fields :nth-child(17)').addClass('field--error');
         if($('.address-fields :nth-child(17) p').length==0){
-            $('.address-fields :nth-child(17) div').after('<p class="field__message field__message--error" id="error-for-zip">We are not currently servicing in your area</p>');
+            $('.address-fields :nth-child(17) div').after(`<p class="field__message field__message--error" id="error-for-zip">Sorry, we don't deliver to this pincode.</p>`);
             }
         $('#continue_button').attr('disabled', true);
         $('#continue_button').css('background-color','#bdbdbd');
