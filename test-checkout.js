@@ -249,32 +249,37 @@ $(".link--small").html("<img class='plus-img' src='data:image/svg+xml;base64,PHN
 
 
 
-$('#checkout_shipping_address_zip').on('change', function(){
-    var inputPincode = parseInt($('#checkout_shipping_address_zip').val());
-    if($.inArray(inputPincode,pincodes)===-1){
-        $('.address-fields :nth-child(17)').addClass('field--error');
-        if($('.address-fields :nth-child(17) p').length==0){
-            $('.address-fields :nth-child(17) div').after(`<p class="field__message field__message--error" id="error-for-zip">Sorry, we don't deliver to this pincode.</p>`);
-            }
-        $('#continue_button').attr('disabled', true);
-        $('#continue_button').css('background-color','#bdbdbd');
-        }
-    else{
-        $('.address-fields :nth-child(17) ').removeClass('field--error');
-        $('#continue_button').removeAttr('disabled');
-        $('#continue_button').removeAttr('style');
-        }
-    });
+
 });
       
 $(document).on(`page:load page:change`, function() {
+    
 	$('#checkout_reduction_code').on('input', function() {
 	if($('#checkout_reduction_code').length > 0 && $('#checkout_reduction_code').val() != ''){
 	$('.field__input-btn').attr('style','background : #ea2127 !important') }
-	else{$('.field__input-btn').attr('style','background :#d3d3d3 !important') }});
+    else{$('.field__input-btn').attr('style','background :#d3d3d3 !important') }});
+    
 	$('#checkout_shipping_address_phone').removeAttr('data-phone-formatter')
 	$('#checkout_shipping_address_phone').removeAttr('data-phone-formatter-country-code')
 	$('#checkout_shipping_address_phone').removeAttr('data-phone-formatter-country-select')
-	$('#checkout_shipping_address_phone').attr('maxlength','10')
-      });
+    $('#checkout_shipping_address_phone').attr('maxlength','10')
+    
+    $('#checkout_shipping_address_zip').on('change', function(){
+        var inputPincode = parseInt($('#checkout_shipping_address_zip').val());
+        if($.inArray(inputPincode,pincodes)===-1){
+            $('.address-fields :nth-child(17)').addClass('field--error');
+            if($('.address-fields :nth-child(17) p').length==0){
+                $('.address-fields :nth-child(17) div').after(`<p class="field__message field__message--error" id="error-for-zip">Sorry, we don't deliver to this pincode.</p>`);
+                }
+            $('#continue_button').attr('disabled', true);
+            $('#continue_button').css('background-color','#bdbdbd');
+            }
+        else{
+            $('.address-fields :nth-child(17) ').removeClass('field--error');
+            $('#continue_button').removeAttr('disabled');
+            $('#continue_button').removeAttr('style');
+            }
+        });
+
+    });
 
