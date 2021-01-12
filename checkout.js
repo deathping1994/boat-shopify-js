@@ -8,7 +8,6 @@ var style = `<style>
       #checkout_reduction_code_mobile{
         border: none;
       }
-
       .wrap, .sidebar{
        background-color: white;
       }
@@ -35,25 +34,20 @@ var style = `<style>
         border-width: 0 1px 0 0;
         border-color: #d3d3d3;
        }
-      }
-      
+      }      
       .breadcrumb__item .icon-svg{
        display: none;
       }
-      
-      
       .order-summary-toggle .wrap{
        background-color: #fafafa;
-      }
-      
+      }      
       .offer{
         margin-bottom: 4px;
         font-size: 17px !important;
         font-weight: 500 !important;
         font: inherit;
         margin: 6px;
-      }
-      
+      }      
       .offer2{
         margin-bottom: 4px;
         font-size: 17px !important;
@@ -63,9 +57,7 @@ var style = `<style>
       }
       .plus-img{
         height: 17px;
-      }
-      
-      
+      }   
       .content{
        background-color: white;
       }
@@ -82,8 +74,7 @@ var style = `<style>
         border-top: none !important;
       }
       .radio-wrapper{
-        border: none !important
-        
+        border: none !important;        
       }
       .section--payment-method{
        margin: 16px 16px 25px 16px;
@@ -105,8 +96,7 @@ var style = `<style>
       .step__footer{
          margin: 16px 16px 25px 16px;
          padding: 15px;
-      }
-      
+      }      
       .section__title{
        font-weight: 500;
       }
@@ -115,28 +105,23 @@ var style = `<style>
         padding: 15px;
         background-color: #fafafa;
         font-weight: 500;
-      }
-      
+      }      
       .div-pay{
         margin: 16px 16px 25px 16px;
         padding: 15px;
         background-color: #fafafa;
         font-weight: 500;
-      }
-      
+      }      
       .div-1{
         padding: 4px;
         height: 18px;
         width: 18px;
         display: inline-block;
         border-radius: 50%;
-        text-align: center;
-        
-      }
-      
+        text-align: center;        
+      }      
       .red{
-       background-color: #ed1d26;
-        
+       background-color: #ed1d26;        
       }
       .space{
        letter-spacing: 1.5px;
@@ -193,10 +178,12 @@ var style = `<style>
       }
     </style>`
 $('head').append(style);
+	
 var listItems = $("header nav ul li");
 len = listItems.length
 if(len==4){listItems[0].remove()}
 var listItems = $("header nav ul li");
+	
 listItems.each(function(idx, li) {
   var product = $(li).find('span');
   product.empty();
@@ -242,9 +229,6 @@ $("header nav ul li:nth-child(2)").find('.space').css('color','#ed1d26')
   else{$("header nav ul li:nth-child(2)").find('.space').css('color','#bdbdbd')}
 
 
-
-
-
 $("#order-summary > div > div.order-summary__section.order-summary__section--discount > form:nth-child(3) > div.fieldset > div").before("<h2 class='offer'>Promotional Offer</h2>");   
 $("body > div > div > div > main > div.step > div > div.section.section--reductions.hidden-on-desktop > div.section__header > h2").html("Discount Code");
 $("#checkout_reduction_code_mobile").attr("placeholder", "Discount Code");
@@ -254,12 +238,57 @@ $(".link--small").html("<img class='plus-img' src='data:image/svg+xml;base64,PHN
 });
       
 $(document).on(`page:load page:change`, function() {
+    
 	$('#checkout_reduction_code').on('input', function() {
 	if($('#checkout_reduction_code').length > 0 && $('#checkout_reduction_code').val() != ''){
 	$('.field__input-btn').attr('style','background : #ea2127 !important') }
-	else{$('.field__input-btn').attr('style','background :#d3d3d3 !important') }});
-	$('#checkout_shipping_address_phone').removeAttr('data-phone-formatter')
-	$('#checkout_shipping_address_phone').removeAttr('data-phone-formatter-country-code')
-	$('#checkout_shipping_address_phone').removeAttr('data-phone-formatter-country-select')
-	$('#checkout_shipping_address_phone').attr('maxlength','10')
-      });
+        else{$('.field__input-btn').attr('style','background :#d3d3d3 !important') }});
+    
+	$('#checkout_shipping_address_phone').removeAttr('data-phone-formatter');
+	$('#checkout_shipping_address_phone').removeAttr('data-phone-formatter-country-code');
+	$('#checkout_shipping_address_phone').removeAttr('data-phone-formatter-country-select');
+	$('#checkout_shipping_address_phone').attr('maxlength','10');
+    
+    var inputPincode = parseInt($('#checkout_shipping_address_zip').val());
+        if($.inArray(inputPincode,pincodes)===-1 ){
+            $('.address-fields :nth-child(17)').addClass('field--error');
+            if($('.address-fields :nth-child(17) p').length==0){
+                $('.address-fields :nth-child(17) div').after(`<p class="field__message field__message--error" id="error-for-zip">Sorry, we don't deliver to this pincode.</p>`);
+                }
+            $('#continue_button').attr('disabled', true);
+            $('#continue_button').css('background-color','#bdbdbd');
+            }
+        else{
+            $('.address-fields :nth-child(17) ').removeClass('field--error');
+            $('#continue_button').removeAttr('disabled');
+            $('#continue_button').removeAttr('style');
+            }
+         if(!inputPincode){
+          $('.address-fields :nth-child(17) ').removeClass('field--error');
+            $('#continue_button').removeAttr('disabled');
+            $('#continue_button').removeAttr('style');
+        }
+	
+    $('#checkout_shipping_address_zip').on('change', function(){
+        var inputPincode = parseInt($('#checkout_shipping_address_zip').val());
+        if($.inArray(inputPincode,pincodes)===-1){
+            $('.address-fields :nth-child(17)').addClass('field--error');
+            if($('.address-fields :nth-child(17) p').length==0){
+                $('.address-fields :nth-child(17) div').after(`<p class="field__message field__message--error" id="error-for-zip">Sorry, we don't deliver to this pincode.</p>`);
+                }
+            $('#continue_button').attr('disabled', true);
+            $('#continue_button').css('background-color','#bdbdbd');
+            }
+        else{
+            $('.address-fields :nth-child(17) ').removeClass('field--error');
+            $('#continue_button').removeAttr('disabled');
+            $('#continue_button').removeAttr('style');
+            }
+	if(!inputPincode){
+          $('.address-fields :nth-child(17) ').removeClass('field--error');
+            $('#continue_button').removeAttr('disabled');
+            $('#continue_button').removeAttr('style');
+        }
+        });
+
+    });
