@@ -278,7 +278,7 @@ $(document).on(`page:load page:change`, function() {
             $('#continue_button').removeAttr('disabled');
             $('#continue_button').removeAttr('style');
             }
-         if(inputPincode==NaN){
+         if(!inputPincode){
           $('.address-fields :nth-child(17) ').removeClass('field--error');
             $('#continue_button').removeAttr('disabled');
             $('#continue_button').removeAttr('style');
