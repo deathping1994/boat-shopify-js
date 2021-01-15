@@ -222,7 +222,6 @@ $(document).on('productDataLoaded', function() {
 
     var x = $('.quantity-submit-row__submit :input');
     window.addEventListener('scroll', () => {
-        console.log('scrollc')
         var flag = isElementInViewport(x)
         if (flag) {
             $('.qsb-wrapper ').css('display', 'none');
