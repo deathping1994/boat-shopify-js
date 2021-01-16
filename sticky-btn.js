@@ -42,11 +42,11 @@ $(document).on('productDataLoaded', function() {
     if ($('.current-price')[0]) { var currentPrice = $('.current-price')[0].innerHTML };
     var wasPrice = $('.was-price')[0].innerHTML
     var stickyImageContent = `<div class="qsb-product"><div class="qsb-product__media" style="width: 60px;"><img src="` + imageLink + `" alt="Stone 190"></div><div class="qsb-product__info"><h2 class="qsb-product__title" style="color: rgb(255, 255, 255);">` + productTitle + `</h2><p class="qsb-product__price"><span class="qsb-product__current-price" style="color: rgb(255, 255, 255);">` + currentPrice + `</span><s class="qsb-product__price-compare-at">` + wasPrice + `</s></p></div></div>`
-    var y = `<div id="qikify-stickycart-app" class="qikify-stickycart-app">
+    var stickyHTML = `<div id="qikify-stickycart-app" class="qikify-stickycart-app">
         <div class="qsb-wrapper  qsb-wrapper--desktop-bottom  qsb-wrapper--mobile-bottom  qsb-wrapper--interactive qsb--active in"
             style="height: 80px; background-color: rgb(0, 0, 0); font-family: Montserrat; font-size: 16px; font-weight: 400; font-style: inherit; letter-spacing: 0px;">
             ` + stickyImageContent + product_list_mobile.get(0).outerHTML + product_list_desktop.get(0).outerHTML + form.get(0).outerHTML + `</div></div>`
-    $('#pagefooter').after(y);
+    $('#pagefooter').after(stickyHTML);
     $('.qikify-stickycart-app .quantity-submit-row__submit input').attr('id', 'sticky_add_to_cart');
     var styleSheet = `<style type="text/css">.qikify-stickycart-app,.qikify-stickycart-app *,.qikify-stickycart-app:after,.qikify-stickycart-app :after,.qikify-stickycart-app:before,.qikify-stickycart-app :before {    -webkit-box-sizing: border-box;    box-sizing: border-box
     }@-webkit-keyframes stickycart-spin {    0% {        -webkit-transform: rotate(0deg);        transform: rotate(0deg)    }    to {        -webkit-transform: rotate(1turn);        transform: rotate(1turn)    }}@keyframes stickycart-spin {    0% {        -webkit-transform: rotate(0deg);        transform: rotate(0deg)    }    to {        -webkit-transform: rotate(1turn);        transform: rotate(1turn)    }}.qsc-clearfix:after {    display: block;    clear: both;    content: ""}.qsc-d-none {    display: none!important
@@ -219,7 +219,7 @@ $(document).on('productDataLoaded', function() {
         }}@media (min-width: 768px) {    .qikify-stickycart-app .mobile {        display: none
         }}@media (min-width: 767px) {    .quantity-submit-row__submit input[type=submit] {        margin-right: 50px !important;    }}@media (max-width: 352px) {    .qsb-wrapper .prodct_variant {        margin-left: 80px;    }    .qsb-wrapper .qsb-product__price {        display: none;    }}.qsb-product .input-row {    margin: 0px;} </style>`
     $('head').append(styleSheet)
-
+    $('#qikify-stickycart-app form p').remove()
     var x = $('.quantity-submit-row__submit :input');
     window.addEventListener('scroll', () => {
         var flag = isElementInViewport(x)
