@@ -47,7 +47,7 @@ $(document).on('productDataLoaded', function() {
             style="height: 80px; background-color: rgb(0, 0, 0); font-family: Montserrat; font-size: 16px; font-weight: 400; font-style: inherit; letter-spacing: 0px;">
             ` + stickyImageContent + product_list_mobile.get(0).outerHTML + product_list_desktop.get(0).outerHTML + form.get(0).outerHTML + `</div></div>`
     $('#pagefooter').after(y);
-    $('.qikify-stickycart-app .quantity-submit-row__submit input').attr('id', 'sticky_add_to_cart');
+    $('.qikify-stickycart-app .quantity-submit-row__submit').attr('id', 'sticky_add_to_cart');
     var styleSheet = `<style type="text/css">.qikify-stickycart-app,.qikify-stickycart-app *,.qikify-stickycart-app:after,.qikify-stickycart-app :after,.qikify-stickycart-app:before,.qikify-stickycart-app :before {    -webkit-box-sizing: border-box;    box-sizing: border-box
     }@-webkit-keyframes stickycart-spin {    0% {        -webkit-transform: rotate(0deg);        transform: rotate(0deg)    }    to {        -webkit-transform: rotate(1turn);        transform: rotate(1turn)    }}@keyframes stickycart-spin {    0% {        -webkit-transform: rotate(0deg);        transform: rotate(0deg)    }    to {        -webkit-transform: rotate(1turn);        transform: rotate(1turn)    }}.qsc-clearfix:after {    display: block;    clear: both;    content: ""}.qsc-d-none {    display: none!important
     }@media (min-width:992px) {    .d-desktop-none {        display: none!important
