@@ -268,6 +268,8 @@ $(document).on('productDataLoaded', function() {
         var variantSrc = data.featured_image.src.split('?')[0].replace(/http[s]?:/, '');
         $(".qsb-product__media img").attr("src", variantSrc)
     });
+    
+    $(document).trigger("stickyCartLoaded");
 
    
 });
