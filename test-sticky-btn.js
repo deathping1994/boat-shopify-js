@@ -273,6 +273,11 @@ $(document).on('productDataLoaded', function() {
     $('#sticky_add_to_cart input[type="submit"]').attr('value','Add To Cart');
     $('.qikify-stickycart-app #BIS_trigger').css('display','none');
     
+    $('.qikify-stickycart-app .original-selector').find('option').each(function(index) {
+        $(this).removeAttr('selected')
+        if($(this).text()===$('.qikify-stickycart-app .prodct_variant.mobile .activevar').attr('title')){$(this).attr('selected','selected')}
+    });
+    
     $(document).trigger("stickyCartLoaded");
 
    
