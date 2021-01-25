@@ -269,8 +269,8 @@ $(document).on('productDataLoaded', function() {
         $(".qsb-product__media img").attr("src", variantSrc)
     });
     
-    $('#sticky_add_to_cart').removeAttr('disabled');
-    $('#sticky_add_to_cart').attr('value','Add To Cart');
+    $('#sticky_add_to_cart input[type="submit"]').removeAttr('disabled');
+    $('#sticky_add_to_cart input[type="submit"]').attr('value','Add To Cart');
     $('.qikify-stickycart-app #BIS_trigger').css('display','none');
     
     $(document).trigger("stickyCartLoaded");
