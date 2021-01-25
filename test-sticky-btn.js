@@ -14,7 +14,7 @@ $(document).on('productDataLoaded', function() {
     var product_list_mobile = $(".prodct_variant").clone();
     product_list_mobile.find('li').each(function() {
         if (this.dataset.qty <= 0)(this.remove());
-//         $(this).removeClass('activevar');
+        $(this).removeClass('activevar');
     });
     product_list_mobile.find('li:first-child').addClass('activevar')
     var product_list_desktop = $(".prodct_variant").clone()
@@ -268,6 +268,10 @@ $(document).on('productDataLoaded', function() {
         var variantSrc = data.featured_image.src.split('?')[0].replace(/http[s]?:/, '');
         $(".qsb-product__media img").attr("src", variantSrc)
     });
+    
+    $('#sticky_add_to_cart').removeAttr('disabled');
+    $('#sticky_add_to_cart').attr('value','Add To Cart');
+    $('.qikify-stickycart-app #BIS_trigger').css('display','none');
     
     $(document).trigger("stickyCartLoaded");
 
