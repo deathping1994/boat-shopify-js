@@ -270,6 +270,8 @@ $(document).on('productDataLoaded', function() {
     
     $('#sticky_add_to_cart input[type="submit"]').removeAttr('disabled');
     $('#sticky_add_to_cart input[type="submit"]').attr('value','Add To Cart');
+    $('#sticky_add_to_cart').removeAttr('disabled');
+    $('#sticky_add_to_cart').attr('value','Add To Cart');
     $('.qikify-stickycart-app #BIS_trigger').css('display','none');
     
     $('.qikify-stickycart-app .original-selector').find('option').each(function(index) {
