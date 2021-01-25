@@ -14,7 +14,7 @@ $(document).on('productDataLoaded', function() {
     var product_list_mobile = $(".prodct_variant").clone();
     product_list_mobile.find('li').each(function() {
         if (this.dataset.qty <= 0)(this.remove());
-        $(this).removeClass('activevar');
+//         $(this).removeClass('activevar');
     });
     product_list_mobile.find('li:first-child').addClass('activevar')
     var product_list_desktop = $(".prodct_variant").clone()
