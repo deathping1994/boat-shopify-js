@@ -23,7 +23,8 @@ $(document).on('productDataLoaded', function() {
     });
     product_list_mobile.addClass('mobile');
     product_list_desktop.addClass('desktop');
-    var form = $(".product-form").find("form").clone(true);
+    originalFormId = $(".product-form").find("form").attr("id");
+    var form = $(".product-form").find("form").clone(true).prop('id', originalFormId+"-sticky" );;
     form.find(".shopify-payment-button").remove();
     form.find(".backorder").remove();
     form.find(".img-strip").remove();
