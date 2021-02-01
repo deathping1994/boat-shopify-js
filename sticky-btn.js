@@ -35,7 +35,8 @@ $(document).on('productDataLoaded', function() {
     form.find(".quantity-submit-row__submit input").css("margin", "auto");
     form.find("label").css("display", "none");
     form.find(".original-selector").css("display", "none");
-
+    form.removeAttribute("action")
+    
     var imageLink = $('.show-gallery')[0].href
     var productTitle = $('.product-title')[0].innerHTML
     if ($('.price')[0]) { var currentPrice = $('.price')[0].innerHTML };
@@ -278,6 +279,13 @@ $(document).on('productDataLoaded', function() {
         $(this).removeAttr('selected')
         if($(this).text()===$('.qikify-stickycart-app .prodct_variant.mobile .activevar').attr('title')){$(this).attr('selected','selected')}
     });
+    
+    $( "#sticky_add_to_cart" ).click(function( event ) {
+        event.preventDefault();
+        $(".product-form").find("form").submit();
+    });
+    
+    
     
      $(document).trigger("stickyCartLoaded");
    
