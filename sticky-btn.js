@@ -35,7 +35,6 @@ $(document).on('productDataLoaded', function() {
     form.find(".quantity-submit-row__submit input").css("margin", "auto");
     form.find("label").css("display", "none");
     form.find(".original-selector").css("display", "none");
-    form.removeAttribute("action")
     
     var imageLink = $('.show-gallery')[0].href
     var productTitle = $('.product-title')[0].innerHTML
