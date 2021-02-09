@@ -1,9 +1,9 @@
 {
   "result": "true",
   "data": {
-    "video": "",
+    "video": "https://youtu.be/Xxbfm0VC7zo",
     "shop_id": "2",
-    "32099057369186": {
+    "32058667565154": {
       "section-1": [
         {
           "background_image": "",
@@ -15,98 +15,133 @@
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 1,
-          "description_table": [{ "tablefield": "", "fieldvalue": "" }]
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
         }
       ],
       "section-2": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/1611819026section2_bg_1366x658.jpg?v=1611819030",
-          "color": "#ffffff",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/161181903132099057369186section2_800x800-1.png?v=1611819034",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488005bg-1.jpg?v=1607488008",
+          "color": "#000000",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748806032058667565154black-(1).png?v=1607488064",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 1,
-          "description_table": [{ "tablefield": "", "fieldvalue": "" }]
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
         }
       ],
       "section-3": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/1611819035section3_bg_1366x658.jpg?v=1611819038",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488009bg-2.jpg?v=1607488012",
           "color": "#ffffff",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/161181903832099057369186section3_900x820-1.png?v=1611819042",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748806532058667565154black-(2).png?v=1607488069",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 1,
-          "description_table": [{ "tablefield": "", "fieldvalue": "" }]
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
         }
       ],
       "section-4": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/1611820499section4_1366x658_1.jpg?v=1611820502",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488013bg-3.jpg?v=1607488015",
           "color": "#ffffff",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/161182033432099057369186section6_700x700.jpg?v=1611820337",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748807032058667565154black-(3).png?v=1607488074",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 1,
-          "description_table": [{ "tablefield": "", "fieldvalue": "" }]
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
         }
       ],
       "section-5": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/1611819051section5_bg_1366x658.jpg?v=1611819054",
-          "color": "#ffffff",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/161181953232099057369186section5_808x874.png?v=1611819536",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488016bg-4.jpg?v=1607488019",
+          "color": "#000000",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748807532058667565154black-(4).png?v=1607488080",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 1,
-          "description_table": [{ "tablefield": "", "fieldvalue": "" }]
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
         }
       ],
       "section-6": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/1611819059section_6_1366x658.jpg?v=1611819061",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488020bg-5.jpg?v=1607488023",
           "color": "#ffffff",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/161182033732099057369186section4_900x900-1.png?v=1611820341",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748808132058667565154black-(5).png?v=1607488084",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 1,
-          "description_table": [{ "tablefield": "", "fieldvalue": "" }]
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
         }
       ],
       "section-7": [
         {
           "background_image": "",
           "color": "#000000",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/161181906632099057369186section_7_700x700_1.png?v=1611819070",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160749933732058667565154160749837332058667565154enigma-fi-new.png?v=1607499340",
           "description": "",
-          "whats_new": "<p>No manual is currently available for this product.</p>\r\n",
+          "whats_new": "<p><a href=\"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/enigma-manual.pdf?v=1607488844\">Manual</a></p>\r\n",
           "faq": "",
-          "heading_big": "",
-          "heading_small": "",
+          "heading_big": null,
+          "heading_small": null,
           "section_video": null,
-          "description_count": 1,
-          "description_table": [{ "tablefield": "", "fieldvalue": "" }]
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
         }
       ],
       "section-8": [
@@ -138,10 +173,152 @@
           "description_count": 1,
           "description_table": [{ "tablefield": "", "fieldvalue": "" }]
         }
-      ],
-      "section-10": [
+      ]
+    },
+    "32058667597922": {
+      "section-1": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/1612573762usppanel_ad441mobile.png?v=1612573766",
+          "background_image": "",
+          "color": "#ffffff",
+          "section_image": "",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
+        }
+      ],
+      "section-2": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488248bg-1.jpg?v=1607488251",
+          "color": "#000000",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748825132058667597922grey-(1).png?v=1607488255",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
+        }
+      ],
+      "section-3": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488256bg-2.jpg?v=1607488259",
+          "color": "#ffffff",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748826032058667597922grey-(2).png?v=1607488264",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
+        }
+      ],
+      "section-4": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488265bg-3.jpg?v=1607488268",
+          "color": "#ffffff",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748826932058667597922grey-(3).png?v=1607488273",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
+        }
+      ],
+      "section-5": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488274bg-4.jpg?v=1607488276",
+          "color": "#000000",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748827732058667597922grey-(4).png?v=1607488281",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
+        }
+      ],
+      "section-6": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488281bg-5.jpg?v=1607488284",
+          "color": "#ffffff",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748828532058667597922grey-(5).png?v=1607488289",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
+        }
+      ],
+      "section-7": [
+        {
+          "background_image": "",
+          "color": "#000000",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748829032058667597922grey-(6).png?v=1607488294",
+          "description": "",
+          "whats_new": "<p><a href=\"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/enigma-manual.pdf?v=1607488844\">Manual</a></p>\r\n",
+          "faq": "",
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 2,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            { "tablefield": "", "fieldvalue": "" },
+            { "tablefield": "", "fieldvalue": "" }
+          ]
+        }
+      ],
+      "section-8": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/1612573786usp-panel_ad441-(web).png?v=1612573790",
           "color": "#000000",
           "section_image": "",
           "description": "",
@@ -154,9 +331,9 @@
           "description_table": [{ "tablefield": "", "fieldvalue": "" }]
         }
       ],
-      "section-11": [
+      "section-9": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/1612573786usp-panel_ad441-(web).png?v=1612573790",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/1612573762usppanel_ad441mobile.png?v=1612573766",
           "color": "#000000",
           "section_image": "",
           "description": "",
