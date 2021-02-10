@@ -1,126 +1,186 @@
 {
   "result": "true",
   "data": {
-    "video": "https://youtu.be/Xxbfm0VC7zo",
+    "video": "",
     "shop_id": "2",
-    "32058667565154": {
+    "20355293020258": {
       "section-1": [
         {
-          "background_image": "",
+          "background_image": "https://cdn2.shopify.com/s/files/1/0057/8938/4802/t/11/assets/1563016938basshead-series-510wired-red-section1-bg.jpg?12498",
           "color": "#ffffff",
-          "section_image": "",
+          "section_image": "https://cdn2.shopify.com/s/files/1/0057/8938/4802/t/11/assets/1563015905203552930202581.png?12364",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
       "section-2": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488005bg-1.jpg?v=1607488008",
-          "color": "#000000",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748806032058667565154black-(1).png?v=1607488064",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/1587630575banner1-bg.png?v=1587630577",
+          "color": "#ffffff",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763057820355293020258banner1-product.png?v=1587630581",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
       "section-3": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488009bg-2.jpg?v=1607488012",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/1587630582banner2-bg.png?v=1587630585",
           "color": "#ffffff",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748806532058667565154black-(2).png?v=1607488069",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763058620355293020258banner2-product.png?v=1587630588",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
       "section-4": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488013bg-3.jpg?v=1607488015",
-          "color": "#ffffff",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748807032058667565154black-(3).png?v=1607488074",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/1587630589banner3-bg.png?v=1587630591",
+          "color": "#000000",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763059220355293020258banner3-product.png?v=1587630595",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
       "section-5": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488016bg-4.jpg?v=1607488019",
-          "color": "#000000",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748807532058667565154black-(4).png?v=1607488080",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/11/assets/15657737041562832752basshead-series-510wired-red-section5-bg.jpg?19377",
+          "color": "#ffffff",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763059520355293020258banner4-model-copy.png?v=1587630598",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
       "section-6": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488020bg-5.jpg?v=1607488023",
-          "color": "#ffffff",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748808132058667565154black-(5).png?v=1607488084",
+          "background_image": "",
+          "color": "#000000",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763105420355293020258bassheads-103-red-6.png?v=1587631057",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
@@ -128,25 +188,35 @@
         {
           "background_image": "",
           "color": "#000000",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160749933732058667565154160749837332058667565154enigma-fi-new.png?v=1607499340",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763105820355293020258bassheads-103-red-7.png?v=1587631060",
           "description": "",
-          "whats_new": "<p><a href=\"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/enigma-manual.pdf?v=1607488844\">Manual</a></p>\r\n",
+          "whats_new": "<p>No manual currently available for this product.</p>\r\n",
           "faq": "",
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
       "section-8": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/16128835021612870717usp-panel_ad441-web-test.png?v=1612883505",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/1612573786usp-panel_ad441-(web).png?v=1612573790",
           "color": "#000000",
           "section_image": "",
           "description": "",
@@ -156,7 +226,12 @@
           "heading_small": null,
           "section_video": null,
           "description_count": 1,
-          "description_table": [{ "tablefield": "", "fieldvalue": "" }]
+          "description_table": [
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
+          ]
         }
       ],
       "section-9": [
@@ -171,128 +246,193 @@
           "heading_small": null,
           "section_video": null,
           "description_count": 1,
-          "description_table": [{ "tablefield": "", "fieldvalue": "" }]
+          "description_table": [
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
+          ]
         }
       ]
     },
-    "32058667597922": {
+    "20355293053026": {
       "section-1": [
         {
-          "background_image": "",
+          "background_image": "https://cdn2.shopify.com/s/files/1/0057/8938/4802/t/11/assets/1563015622section1-background.jpg?12354",
           "color": "#ffffff",
-          "section_image": "",
+          "section_image": "https://cdn2.shopify.com/s/files/1/0057/8938/4802/t/11/assets/1563016897203552930530261.png?12464",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
       "section-2": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488248bg-1.jpg?v=1607488251",
-          "color": "#000000",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748825132058667597922grey-(1).png?v=1607488255",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/1587635805banner1-bg.png?v=1587635807",
+          "color": "#ffffff",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763580820355293053026banner1-product.png?v=1587635810",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
       "section-3": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488256bg-2.jpg?v=1607488259",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/1587635811banner2-bg.png?v=1587635813",
           "color": "#ffffff",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748826032058667597922grey-(2).png?v=1607488264",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763581420355293053026banner2-product.png?v=1587635816",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
       "section-4": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488265bg-3.jpg?v=1607488268",
-          "color": "#ffffff",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748826932058667597922grey-(3).png?v=1607488273",
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/1587635816banner3-bg.png?v=1587635819",
+          "color": "#000000",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763582020355293053026banner3-product.png?v=1587635822",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
       "section-5": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488274bg-4.jpg?v=1607488276",
-          "color": "#000000",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748827732058667597922grey-(4).png?v=1607488281",
+          "background_image": "https://cdn2.shopify.com/s/files/1/0057/8938/4802/t/11/assets/1563015962section5-background.jpg?12394",
+          "color": "#ffffff",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763582320355293053026banner4-model-copy.png?v=1587635825",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
       "section-6": [
         {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/1607488281bg-5.jpg?v=1607488284",
-          "color": "#ffffff",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748828532058667597922grey-(5).png?v=1607488289",
+          "background_image": "",
+          "color": "#000000",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763582620355293053026banner6-product.png?v=1587635828",
           "description": "",
           "whats_new": null,
           "faq": null,
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ],
@@ -300,19 +440,241 @@
         {
           "background_image": "",
           "color": "#000000",
-          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/49/assets/160748829032058667597922grey-(6).png?v=1607488294",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763582920355293053026bassheads-103-black-7.png?v=1587635831",
           "description": "",
-          "whats_new": "<p><a href=\"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/enigma-manual.pdf?v=1607488844\">Manual</a></p>\r\n",
+          "whats_new": "<p>No manual currently available for this product.</p>\r\n",
           "faq": "",
           "heading_big": null,
           "heading_small": null,
           "section_video": null,
-          "description_count": 2,
+          "description_count": 3,
           "sec1_top_image": null,
           "sec1_top_image_for_mobile": null,
           "description_table": [
-            { "tablefield": "", "fieldvalue": "" },
-            { "tablefield": "", "fieldvalue": "" }
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
+          ]
+        }
+      ]
+    },
+    "20355293085794": {
+      "section-1": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/11/assets/1563625874basshead-series-510wired-blue-section1-bg.jpg?16811",
+          "color": "#ffffff",
+          "section_image": "https://cdn2.shopify.com/s/files/1/0057/8938/4802/t/11/assets/1563016950203552930857941.png?12520",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 3,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
+          ]
+        }
+      ],
+      "section-2": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/1587632237banner1-bg.png?v=1587632239",
+          "color": "#ffffff",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763224020355293085794banner1-product.png?v=1587632242",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 3,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
+          ]
+        }
+      ],
+      "section-3": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/1587632243banner2-bg.png?v=1587632245",
+          "color": "#ffffff",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763224620355293085794banner2-product.png?v=1587632248",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 3,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
+          ]
+        }
+      ],
+      "section-4": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/1587632248banner3-bg.png?v=1587632251",
+          "color": "#000000",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763225220355293085794banner3-product.png?v=1587632254",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 3,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
+          ]
+        }
+      ],
+      "section-5": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/11/assets/1563625884basshead-series-510wired-blue-section5-bg.jpg?16831",
+          "color": "#ffffff",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763225520355293085794banner4-model-copy.png?v=1587632258",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 3,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
+          ]
+        }
+      ],
+      "section-6": [
+        {
+          "background_image": "",
+          "color": "#000000",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763225820355293085794banner6-product.png?v=1587632261",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 3,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
+          ]
+        }
+      ],
+      "section-7": [
+        {
+          "background_image": "",
+          "color": "#000000",
+          "section_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/17/assets/158763226120355293085794bassheads-103-blue-7.png?v=1587632263",
+          "description": "",
+          "whats_new": "<p>No manual currently available for this product.</p>\r\n",
+          "faq": "",
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 3,
+          "sec1_top_image": null,
+          "sec1_top_image_for_mobile": null,
+          "description_table": [
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
           ]
         }
       ]
