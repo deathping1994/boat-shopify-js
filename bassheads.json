@@ -213,46 +213,6 @@
             }
           ]
         }
-      ],
-      "section-8": [
-        {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/16128835021612870717usp-panel_ad441-web-test.png?v=1612883505",
-          "color": "#000000",
-          "section_image": "",
-          "description": "",
-          "whats_new": null,
-          "faq": null,
-          "heading_big": null,
-          "heading_small": null,
-          "section_video": null,
-          "description_count": 1,
-          "description_table": [
-            {
-              "tablefield": "",
-              "fieldvalue": ""
-            }
-          ]
-        }
-      ],
-      "section-9": [
-        {
-          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/1612573762usppanel_ad441mobile.png?v=1612573766",
-          "color": "#000000",
-          "section_image": "",
-          "description": "",
-          "whats_new": null,
-          "faq": null,
-          "heading_big": null,
-          "heading_small": null,
-          "section_video": null,
-          "description_count": 1,
-          "description_table": [
-            {
-              "tablefield": "",
-              "fieldvalue": ""
-            }
-          ]
-        }
       ]
     },
     "20355293053026": {
@@ -459,6 +419,46 @@
               "tablefield": "",
               "fieldvalue": ""
             },
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
+          ]
+        }
+      ],
+      "section-8": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/16128835021612870717usp-panel_ad441-web-test.png?v=1612883505",
+          "color": "#000000",
+          "section_image": "",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 1,
+          "description_table": [
+            {
+              "tablefield": "",
+              "fieldvalue": ""
+            }
+          ]
+        }
+      ],
+      "section-9": [
+        {
+          "background_image": "https://cdn.shopify.com/s/files/1/0057/8938/4802/t/54/assets/1612573762usppanel_ad441mobile.png?v=1612573766",
+          "color": "#000000",
+          "section_image": "",
+          "description": "",
+          "whats_new": null,
+          "faq": null,
+          "heading_big": null,
+          "heading_small": null,
+          "section_video": null,
+          "description_count": 1,
+          "description_table": [
             {
               "tablefield": "",
               "fieldvalue": ""
