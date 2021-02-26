@@ -179,10 +179,10 @@ var style = `<style>
     </style>`
 $('head').append(style);
 	
-var listItems = $("header nav ul li");
+var listItems = $("header nav ol li");
 len = listItems.length
 if(len==4){listItems[0].remove()}
-var listItems = $("header nav ul li");
+var listItems = $("header nav ol li");
 	
 listItems.each(function(idx, li) {
   var product = $(li).find('span');
@@ -207,26 +207,26 @@ listItems.each(function(idx, li) {
   if($(li).hasClass('breadcrumb__item breadcrumb__item--blank')){x.removeClass('red');x.addClass('grey');}
 });
 
-if($("header nav ul li:nth-child(1)").hasClass('breadcrumb__item breadcrumb__item--current') && $("header nav ul li:nth-child(2)").hasClass('breadcrumb__item breadcrumb__item--completed')){
-var x =$("header nav ul li:nth-child(2)").find('.div-1');
+if($("header nav ol li:nth-child(1)").hasClass('breadcrumb__item breadcrumb__item--current') && $("header nav ol li:nth-child(2)").hasClass('breadcrumb__item breadcrumb__item--completed')){
+var x =$("header nav ol li:nth-child(2)").find('.div-1');
 x.removeClass('red');x.addClass('grey');}
-if($("header nav ul li:nth-child(1)").hasClass('breadcrumb__item breadcrumb__item--current') && $("header nav ul li:nth-child(3)").hasClass('breadcrumb__item breadcrumb__item--completed')){
-var x =$("header nav ul li:nth-child(3)").find('.div-1');
+if($("header nav ol li:nth-child(1)").hasClass('breadcrumb__item breadcrumb__item--current') && $("header nav ol li:nth-child(3)").hasClass('breadcrumb__item breadcrumb__item--completed')){
+var x =$("header nav ol li:nth-child(3)").find('.div-1');
 x.removeClass('red');x.addClass('grey');}
-if($("header nav ul li:nth-child(2)").hasClass('breadcrumb__item breadcrumb__item--current') && $("header nav ul li:nth-child(3)").hasClass('breadcrumb__item breadcrumb__item--completed')){
-var x =$("header nav ul li:nth-child(3)").find('.div-1');
+if($("header nav ol li:nth-child(2)").hasClass('breadcrumb__item breadcrumb__item--current') && $("header nav ol li:nth-child(3)").hasClass('breadcrumb__item breadcrumb__item--completed')){
+var x =$("header nav ol li:nth-child(3)").find('.div-1');
 x.removeClass('red');x.addClass('grey');}
-$("header nav ul li").find('.space')[2].remove()
+$("header nav ol li").find('.space')[2].remove()
 
-if($("header nav ul li:nth-child(2)").find('.div-1').hasClass('red')){
-$("header nav ul li:nth-child(1)").find('.space').css('color','#ed1d26')
+if($("header nav ol li:nth-child(2)").find('.div-1').hasClass('red')){
+$("header nav ol li:nth-child(1)").find('.space').css('color','#ed1d26')
 	}
-  else{$("header nav ul li:nth-child(1)").find('.space').css('color','#bdbdbd')}
+  else{$("header nav ol li:nth-child(1)").find('.space').css('color','#bdbdbd')}
 
-if($("header nav ul li:nth-child(3)").find('.div-1').hasClass('red')){
-$("header nav ul li:nth-child(2)").find('.space').css('color','#ed1d26')
+if($("header nav ol li:nth-child(3)").find('.div-1').hasClass('red')){
+$("header nav ol li:nth-child(2)").find('.space').css('color','#ed1d26')
 	}
-  else{$("header nav ul li:nth-child(2)").find('.space').css('color','#bdbdbd')}
+  else{$("header nav ol li:nth-child(2)").find('.space').css('color','#bdbdbd')}
 
 
 $("#order-summary > div > div.order-summary__section.order-summary__section--discount > form:nth-child(3) > div.fieldset > div").before("<h2 class='offer'>Promotional Offer</h2>");   
