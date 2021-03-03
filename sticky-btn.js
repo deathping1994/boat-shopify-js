@@ -302,8 +302,7 @@ $(document).on('productDataLoaded', function() {
             else{$(this)[0].style.display = "none";}
         })
     })
-    
-    //  $(document).trigger("stickyCartLoaded");
+    $(document).trigger("stickyCartLoaded");
 
      
    
