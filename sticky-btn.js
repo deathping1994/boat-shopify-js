@@ -286,26 +286,25 @@ $(document).on('productDataLoaded', function() {
         event.preventDefault();
         $(".product-form").find("form").submit();
     });
-    
-     $(document).trigger("stickyCartLoaded");
 
-     $('.qikify-stickycart-app .prodct_variant.mobile li').each(function(index){
-        console.log('in')
+    $('.qikify-stickycart-app .prodct_variant.mobile li').each(function(index){
         if($(this)[0].title === $('.activevar')[0].title){
             $(this)[0].style.display = "inline-block";
-            console.log("in1");
         }
-        else{$(this)[0].style.display = "none"; console.log("in");}
+        else{$(this)[0].style.display = "none";}
     })
 
     $(document).on("click touchstart", ".prodct_variant .veriant_sect", function(e){
         $('.qikify-stickycart-app .prodct_variant.mobile li').each(function(index){
             if($(this)[0].title === e.target.title){
                 $(this)[0].style.display = "inline-block";
-                console.log("in1");
             }
-            else{$(this)[0].style.display = "none"; console.log("in");}
+            else{$(this)[0].style.display = "none";}
         })
     })
+    
+    //  $(document).trigger("stickyCartLoaded");
+
+     
    
 });
