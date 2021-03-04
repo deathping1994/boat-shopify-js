@@ -295,38 +295,46 @@ $(document).on(`page:load page:change`, function () {
       $('#continue_button').removeAttr('style');
     }
   });
-
-  if($('.reduction-code__text')[1].innerHTML == "TESTTEST"){
-    $.get('/cart.js').then(response => {
-      var GETcart = response;
-      console.log(GETcart);
-      GETcart = $.parseJSON(GETcart)
-      var flag = 0;
-      var prod = [2162816352354, 2219059478626, 4517297586274]
-      for (var i = 0; i < GETcart.items.length; i++) {
-        if (prod.includes(GETcart.items[i].product_id)) {
-          var variant = GETcart.items[i].variant_id
-          if (flag == 0) {
-            if (GETcart.items[i].quantity > 1) {
-              if(GETcart.items.length == 1){
-                $.post('/cart/update.js', "updates[" + variant + "]=1").then(() => {window.location.reload()})
+  if($('.reduction-code__text')[1]){
+    if($('.reduction-code__text')[1].innerHTML == "TESTTEST"){
+      $.get('/cart.js').then(response => {
+        var GETcart = response;
+        console.log(GETcart);
+        GETcart = $.parseJSON(GETcart)
+        var flag = 0;
+        var prod = [2162816352354, 2219059478626, 4517297586274]
+        for (var i = 0; i < GETcart.items.length; i++) {
+          if (prod.includes(GETcart.items[i].product_id)) {
+            var variant = GETcart.items[i].variant_id
+            if (flag == 0) {
+              if (GETcart.items[i].quantity > 1) {
+                if(GETcart.items.length == 1){
+                  $.post('/cart/update.js', "updates[" + variant + "]=1").then(() => {window.location.reload()})
+                }
+                else{$.post('/cart/update.js', "updates[" + variant + "]=1")}
               }
-              else{$.post('/cart/update.js', "updates[" + variant + "]=1")}
             }
+            if (flag != 0) {
+              if( i == (GETcart.items.length - 1)){
+                $.post('/cart/update.js', "updates[" + variant + "]=0").then(() => {window.location.reload()})
+              }
+              else{
+                $.post('/cart/update.js', "updates[" + variant + "]=0")
+              }
+            }
+            flag = 1;
           }
-          if (flag != 0) {
-            if( i == (GETcart.items.length - 1)){
-              $.post('/cart/update.js', "updates[" + variant + "]=0").then(() => {window.location.reload()})
-            }
-            else{
-              $.post('/cart/update.js', "updates[" + variant + "]=0")
-            }
-          }
-          flag = 1;
         }
-      }
-    })
+      })
+    }
   }
+
+  // if($('.reduction-code__text')[1]){
+  //   if($('.reduction-code__text')[1].innerHTML == "TESTTEST"){
+  //     $('.field__message.field__message--error')[1].innerHTML = "This coupon can only be applied to one product."
+  //     $('.field__message.field__message--error')[1].style.display = "block";
+  //   }
+  // }
 
   $('.field__input-btn.btn').on("click", function (event) {
     if ($('#checkout_reduction_code')[0].value == "TESTTEST") {
