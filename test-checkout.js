@@ -305,29 +305,56 @@ $(document).on(`page:load page:change`, function () {
         GETcart = $.parseJSON(GETcart)
         var flag = 0;
         var prod = [2162816352354, 2219059478626, 4517297586274]
-        for (var i = 0; i < GETcart.items.length; i++) {
-          if (prod.includes(GETcart.items[i].product_id)) {
-            var variant = GETcart.items[i].variant_id
-            if (flag == 0) {
-              if (GETcart.items[i].quantity > 1) {
-                if(GETcart.items.length == 1){
-                  $.post('/cart/update.js', "updates[" + variant + "]=1").then(() => {window.location.reload()})
-                }
-                else{$.post('/cart/update.js', "updates[" + variant + "]=1")}
-              }
-            }
-            if (flag != 0) {
-              if( i == (GETcart.items.length - 1)){
-                $.post('/cart/update.js', "updates[" + variant + "]=0").then(() => {window.location.reload()})
-              }
-              else{
-                $.post('/cart/update.js', "updates[" + variant + "]=0")
-              }
-            }
-            flag = 1;
+        var quan = 0;
+        for(var k = 0; (k < GETcart.items.length); k++){
+          if(prod.includes(GETcart.items[k].product_id)){
+            quan = quan + GETcart.items[k].quantity;
           }
         }
-      })
+        console.log(quan);
+        if(quan > 1){
+          for (var i = 0; i < GETcart.items.length; i++) {
+            if (prod.includes(GETcart.items[i].product_id)) {
+              var variant = GETcart.items[i].variant_id
+              if (flag == 0) {
+                if (GETcart.items[i].quantity >= 1) {
+                  if(i == (GETcart.items.length - 1)){
+                    $.post('/cart/update.js', "updates[" + variant + "]=1").then(() => {window.location.reload()})
+                  }
+                  else{
+                    for(var j = i+1; j < (GETcart.items.length); j++){
+                      if (prod.includes(GETcart.items[j].product_id)){
+                        $.post('/cart/update.js', "updates[" + variant + "]=1")
+                      }
+                      else {
+                        $.post('/cart/update.js', "updates[" + variant + "]=1").then(() => {window.location.reload()})
+                      }  
+                    }
+                  }
+                }
+              }
+              if (flag != 0) {
+                if( i == (GETcart.items.length - 1)){
+                  $.post('/cart/update.js', "updates[" + variant + "]=0").then(() => {window.location.reload()})
+                }
+                else{
+                  for(var j = i+1; j < (GETcart.items.length); j++){
+                    if (prod.includes(GETcart.items[j].product_id)){
+                      $.post('/cart/update.js', "updates[" + variant + "]=0")
+                    }
+                    else {
+                      $.post('/cart/update.js', "updates[" + variant + "]=0").then(() => {window.location.reload()})
+                    }
+                  }
+                  
+                }
+              }
+              flag = 1;
+            }
+          }
+        }
+      }
+      )
     }
   }
 
@@ -358,11 +385,20 @@ $(document).on(`page:load page:change`, function () {
             if (prod.includes(GETcart.items[i].product_id)) {
               var variant = GETcart.items[i].variant_id
               if (flag == 0) {
-                if (GETcart.items[i].quantity > 1) {
-                  if(GETcart.items.length == 1){
+                if (GETcart.items[i].quantity >= 1) {
+                  if(i == (GETcart.items.length - 1)){
                     $.post('/cart/update.js', "updates[" + variant + "]=1").then(() => {window.location.reload()})
                   }
-                  else{$.post('/cart/update.js', "updates[" + variant + "]=1")}
+                  else{
+                    for(var j = i+1; j < (GETcart.items.length); j++){
+                      if (prod.includes(GETcart.items[j].product_id)){
+                        $.post('/cart/update.js', "updates[" + variant + "]=1")
+                      }
+                      else {
+                        $.post('/cart/update.js', "updates[" + variant + "]=1").then(() => {window.location.reload()})
+                      }  
+                    }
+                  }
                 }
               }
               if (flag != 0) {
@@ -370,16 +406,28 @@ $(document).on(`page:load page:change`, function () {
                   $.post('/cart/update.js', "updates[" + variant + "]=0").then(() => {window.location.reload()})
                 }
                 else{
-                  $.post('/cart/update.js', "updates[" + variant + "]=0")
+                  for(var j = i+1; j < (GETcart.items.length); j++){
+                    if (prod.includes(GETcart.items[j].product_id)){
+                      $.post('/cart/update.js', "updates[" + variant + "]=0")
+                    }
+                    else {
+                      $.post('/cart/update.js', "updates[" + variant + "]=0").then(() => {window.location.reload()})
+                    }
+                  }
+                  
                 }
               }
               flag = 1;
             }
           }
         }
-        );
+        )
       }
     }
   })
+
+  function reload_after(){
+    window.location.reload();
+  }
 
 });
