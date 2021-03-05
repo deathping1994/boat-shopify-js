@@ -255,7 +255,7 @@ $(document).on(`page:load page:change`, function () {
   $('#checkout_shipping_address_phone').attr('maxlength', '10');
 
   var inputPincode = parseInt($('#checkout_shipping_address_zip').val());
-  if ($.inArray(inputPincode, pincodes) === -1) {
+  if ($.inArray(inputPincode,pincodes) === -1) {
     $('.address-fields :nth-child(17)').addClass('field--error');
     if ($('.address-fields :nth-child(17) p').length == 0) {
       $('.address-fields :nth-child(17) div').after(`<p class="field__message field__message--error" id="error-for-zip">Sorry, we don't deliver to this pincode.</p>`);
@@ -276,7 +276,7 @@ $(document).on(`page:load page:change`, function () {
 
   $('#checkout_shipping_address_zip').on('change', function () {
     var inputPincode = parseInt($('#checkout_shipping_address_zip').val());
-    if ($.inArray(inputPincode, pincodes) === -1) {
+    if ($.inArray(inputPincode,pincodes) === -1) {
       $('.address-fields :nth-child(17)').addClass('field--error');
       if ($('.address-fields :nth-child(17) p').length == 0) {
         $('.address-fields :nth-child(17) div').after(`<p class="field__message field__message--error" id="error-for-zip">Sorry, we don't deliver to this pincode.</p>`);
