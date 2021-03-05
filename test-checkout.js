@@ -295,8 +295,8 @@ $(document).on(`page:load page:change`, function () {
       $('#continue_button').removeAttr('style');
     }
   });
-  if($('.reduction-code__text')[1]){
-    var txt = $('.reduction-code__text')[1].innerHTML; 
+  if($('.reduction-code__text').last()[0]){
+    var txt = $('.reduction-code__text').last()[0].innerHTML; 
     var code = new RegExp('[Ii][Nn][Ff][Oo][0-9a-zA-Z]+$')
     if(code.test(txt)){
       $.get('/cart.js').then(response => {
