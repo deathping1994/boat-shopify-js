@@ -296,7 +296,9 @@ $(document).on(`page:load page:change`, function () {
     }
   });
   if($('.reduction-code__text')[1]){
-    if($('.reduction-code__text')[1].innerHTML == "TESTTEST"){
+    var txt = $('.reduction-code__text')[1].innerHTML; 
+    var code = new RegExp('[Ii][Nn][Ff][Oo][0-9a-zA-Z]+$')
+    if(code.test(txt)){
       $.get('/cart.js').then(response => {
         var GETcart = response;
         console.log(GETcart);
@@ -330,14 +332,16 @@ $(document).on(`page:load page:change`, function () {
   }
 
   // if($('.reduction-code__text')[1]){
-  //   if($('.reduction-code__text')[1].innerHTML == "TESTTEST"){
+  //   if($('.reduction-code__text')[1].innerHTML == "INFO"){
   //     $('.field__message.field__message--error')[1].innerHTML = "This coupon can only be applied to one product."
   //     $('.field__message.field__message--error')[1].style.display = "block";
   //   }
   // }
 
   $('.field__input-btn.btn').on("click", function (event) {
-    if ($('#checkout_reduction_code')[0].value == "TESTTEST") {
+    var txt = $('#checkout_reduction_code')[0].value;
+    var code = new RegExp('[Ii][Nn][Ff][Oo][0-9a-zA-Z]+$')
+    if (code.test(txt)) {
       if ($('.reduction-code__text')[0]) {
         if ($('.reduction-code__text')[0].innerText == "MASKON (-Rs. 499.00)") {
           return
