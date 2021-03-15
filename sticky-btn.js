@@ -44,8 +44,13 @@ $(document).on('productDataLoaded', function() {
     var productTitle = $('.product-title')[0].innerHTML
     if ($('.price')[0]) { var currentPrice = $('.price')[0].innerHTML };
     if ($('.current-price')[0]) { var currentPrice = $('.current-price')[0].innerHTML };
-    var wasPrice = $('.was-price')[0].innerHTML
-    var stickyImageContent = `<div class="qsb-product"><div class="qsb-product__media" style="width: 60px;"><img src="` + imageLink + `" alt="Stone 190"></div><div class="qsb-product__info"><h2 class="qsb-product__title" style="color: rgb(255, 255, 255);">` + productTitle + `</h2><p class="qsb-product__price"><span class="qsb-product__current-price" style="color: rgb(255, 255, 255);">` + currentPrice + `</span><s class="qsb-product__price-compare-at">` + wasPrice + `</s></p></div></div>`
+    if($('.was-price')[0]){
+        var wasPrice = $('.was-price')[0].innerHTML
+        var stickyImageContent = `<div class="qsb-product"><div class="qsb-product__media" style="width: 60px;"><img src="` + imageLink + `" alt="Stone 190"></div><div class="qsb-product__info"><h2 class="qsb-product__title" style="color: rgb(255, 255, 255);">` + productTitle + `</h2><p class="qsb-product__price"><span class="qsb-product__current-price" style="color: rgb(255, 255, 255);">` + currentPrice + `</span><s class="qsb-product__price-compare-at" style="background: black; color: white">` + wasPrice + `</s></p></div></div>`
+    }
+    else{
+        var stickyImageContent = `<div class="qsb-product"><div class="qsb-product__media" style="width: 60px;"><img src="` + imageLink + `" alt="Stone 190"></div><div class="qsb-product__info"><h2 class="qsb-product__title" style="color: rgb(255, 255, 255);">` + productTitle + `</h2><p class="qsb-product__price"><span class="qsb-product__current-price" style="color: rgb(255, 255, 255);">` + currentPrice + `</span></p></div></div>`
+    }
     var stickyHTML = `<div id="qikify-stickycart-app" class="qikify-stickycart-app">
         <div class="qsb-wrapper--mobile-bottom qsb--active in"></div>
         <div class="qsb-wrapper  qsb-wrapper--desktop-bottom  qsb-wrapperr--mobile-bottom  qsb-wrapper--interactive qsb--activee inn"
@@ -248,7 +253,13 @@ $(document).on('productDataLoaded', function() {
         $('.qikify-stickycart-app .original-selector option').each(function(count, item) {
             if ($(item)[0].value === selected_variant_id) { $(item).attr("selected", "selected"); }
         });
+        if($('.current-price.theme-money')[0].innerHTML){
+            setTimeout(() => {
+             $('.qsb-product__current-price')[0].innerHTML = $('.current-price.theme-money')[0].innerHTML;
+            }, 20);
+        }
     });
+    
 
     $(document).on("click touchstart", ".qikify-stickycart-app .mobile li", function() {
         $(this).parent().prepend($(this));
@@ -278,6 +289,10 @@ $(document).on('productDataLoaded', function() {
             else{$(this)[0].style.display = "none";}
         })
     });
+
+    if($('.current-price.theme-money')[0].innerHTML){
+        $('.qsb-product__current-price')[0].innerHTML = $('.current-price.theme-money')[0].innerHTML;
+    }
     
     $('#sticky_add_to_cart input[type="submit"]').removeAttr('disabled');
     $('#sticky_add_to_cart input[type="submit"]').attr('value','Add To Cart');
@@ -310,6 +325,17 @@ $(document).on('productDataLoaded', function() {
         }
         else{$(this)[0].style.display = "none";}
     })
+
+    $('.prodct_variant li').on("click touchstart", function(e){
+        if($('.current-price.theme-money')[0].innerHTML){
+            setTimeout(() => {
+             $('.qsb-product__current-price')[0].innerHTML = $('.current-price.theme-money')[0].innerHTML;
+            }, 20);
+        }
+    })
+
+    // $('.qsb-product__price-compare-at')[0].style.background = "#000"
+    // $('.qsb-product__price-compare-at')[0].style.color = "#ffff"
 
     setTimeout(() => {
         $('.activevar')[0].click()
