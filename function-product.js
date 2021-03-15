@@ -61,7 +61,7 @@ $(document).ready(function () {
     $('.product-main-poh').show();
 
     $(".activevar").click();
-    hideLoading();
+    setTimeout(function(){ hideLoading();}, 500);
     $(document).trigger("productDataLoaded");
 
 
