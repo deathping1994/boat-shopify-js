@@ -46,7 +46,7 @@ $(document).on('productDataLoaded', function() {
     if ($('.current-price')[0]) { var currentPrice = $('.current-price')[0].innerHTML };
     if($('.was-price')[0]){
         var wasPrice = $('.was-price')[0].innerHTML
-        var stickyImageContent = `<div class="qsb-product"><div class="qsb-product__media" style="width: 60px;"><img src="` + imageLink + `" alt="Stone 190"></div><div class="qsb-product__info"><h2 class="qsb-product__title" style="color: rgb(255, 255, 255);">` + productTitle + `</h2><p class="qsb-product__price"><span class="qsb-product__current-price" style="color: rgb(255, 255, 255);">` + currentPrice + `</span><s class="qsb-product__price-compare-at" style="background: black; color: white">` + wasPrice + `</s></p></div></div>`
+        var stickyImageContent = `<div class="qsb-product"><div class="qsb-product__media" style="width: 60px;"><img src="` + imageLink + `" alt="Stone 190"></div><div class="qsb-product__info"><h2 class="qsb-product__title" style="color: rgb(255, 255, 255);">` + productTitle + `</h2><p class="qsb-product__price"><span class="qsb-product__current-price" style="color: rgb(255, 255, 255);">` + currentPrice + `</span><s class="qsb-product__price-compare-at" style="background: black; color: #ababab">` + wasPrice + `</s></p></div></div>`
     }
     else{
         var stickyImageContent = `<div class="qsb-product"><div class="qsb-product__media" style="width: 60px;"><img src="` + imageLink + `" alt="Stone 190"></div><div class="qsb-product__info"><h2 class="qsb-product__title" style="color: rgb(255, 255, 255);">` + productTitle + `</h2><p class="qsb-product__price"><span class="qsb-product__current-price" style="color: rgb(255, 255, 255);">` + currentPrice + `</span></p></div></div>`
