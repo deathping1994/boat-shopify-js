@@ -346,7 +346,7 @@ $(document).on('productDataLoaded', function() {
     // $('.qsb-product__price-compare-at')[0].style.color = "#ffff"
 
     setTimeout(() => {
-        $('.activevar')[0].click()
+        $('.product-detail .prodct_variant :first-child').click()
     }, 0.1);
     
      $(document).trigger("stickyCartLoaded");
