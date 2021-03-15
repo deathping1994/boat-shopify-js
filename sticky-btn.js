@@ -1,4 +1,5 @@
 $(document).on('productDataLoaded', function() {
+    
     function isElementInViewport(el) {
         if (typeof jQuery === "function" && el instanceof jQuery) {
             el = el[0];
@@ -17,6 +18,7 @@ $(document).on('productDataLoaded', function() {
         $(this).removeClass('activevar');
     });
      product_list_mobile.find('li:first-child').addClass('activevar')
+
 
 
     var product_list_desktop = $(".prodct_variant").clone()
@@ -308,6 +310,10 @@ $(document).on('productDataLoaded', function() {
         }
         else{$(this)[0].style.display = "none";}
     })
+
+    setTimeout(() => {
+        $('.activevar')[0].click()
+    }, 0.1);
     
      $(document).trigger("stickyCartLoaded");
    
