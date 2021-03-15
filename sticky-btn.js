@@ -311,9 +311,9 @@ $(document).on('productDataLoaded', function() {
         else{$(this)[0].style.display = "none";}
     })
 
-    setTimeout(() => {
-        $('.activevar')[0].click()
-    }, 0.1);
+//     setTimeout(() => {
+//         $('.activevar')[0].click()
+//     }, 0.1);
     
      $(document).trigger("stickyCartLoaded");
    
