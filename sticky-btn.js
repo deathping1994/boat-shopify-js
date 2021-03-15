@@ -349,6 +349,15 @@ $(document).on('productDataLoaded', function() {
         $('.product-detail .prodct_variant :first-child').click()
     }, 0.1);
     
+    if($('.prodct_variant.desktop').length){
+       var ul =$('.prodct_variant.desktop')[0]
+        Array.from(ul.getElementsByTagName("LI"))
+          .sort((a, b) => {
+            return parseInt(b.dataset.qty) - parseInt(a.dataset.qty)
+          }).forEach(li => ul.appendChild(li));
+       
+       };
+    
      $(document).trigger("stickyCartLoaded");
    
 });
