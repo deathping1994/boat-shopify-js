@@ -333,6 +333,10 @@ $(document).on('productDataLoaded', function() {
             }, 20);
         }
     })
+    
+    if($(".qikify-stickycart-app #SingleOptionSelector-0").length){
+       $(".qikify-stickycart-app #SingleOptionSelector-0").hide()
+    }
 
     // $('.qsb-product__price-compare-at')[0].style.background = "#000"
     // $('.qsb-product__price-compare-at')[0].style.color = "#ffff"
