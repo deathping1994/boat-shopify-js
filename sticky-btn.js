@@ -341,6 +341,6 @@ $(document).on('productDataLoaded', function() {
         $('.activevar')[0].click()
     }, 0.1);
     
-     $(document).trigger("stickyCartLoaded");
+     $(document).trigger("stickyCartLoaded"); 
    
 });
