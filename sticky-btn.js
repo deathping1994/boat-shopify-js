@@ -290,7 +290,7 @@ $(document).on('productDataLoaded', function() {
         })
     });
 
-    if($('.current-price.theme-money')[0].innerHTML){
+    if($('.current-price.theme-money').length){
         $('.qsb-product__current-price')[0].innerHTML = $('.current-price.theme-money')[0].innerHTML;
     }
     
