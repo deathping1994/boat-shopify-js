@@ -337,6 +337,10 @@ $(document).on('productDataLoaded', function() {
     if($(".qikify-stickycart-app #SingleOptionSelector-0").length){
        $(".qikify-stickycart-app #SingleOptionSelector-0").hide()
     }
+    
+    if($(".qikify-stickycart-app #SingleOptionSelector-1").length){
+       $(".qikify-stickycart-app #SingleOptionSelector-1").hide()
+    }
 
     // $('.qsb-product__price-compare-at')[0].style.background = "#000"
     // $('.qsb-product__price-compare-at')[0].style.color = "#ffff"
