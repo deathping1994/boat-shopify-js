@@ -62,7 +62,7 @@ $(document).ready(function () {
 
     $(".activevar").click();
     hideLoading();
-    $(document).trigger("productDataLoaded");
+//     $(document).trigger("productDataLoaded");
 
 
     // Action on Click of custom variation.
