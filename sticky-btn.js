@@ -346,7 +346,10 @@ $(document).on('productDataLoaded', function() {
     // $('.qsb-product__price-compare-at')[0].style.color = "#ffff"
 
     setTimeout(() => {
-        $('.product-detail .prodct_variant :first-child').click()
+        const urlParams = new URLSearchParams(location.search);
+        if (!urlParams.has('variant')) {
+            $('.product-detail .prodct_variant :first-child').click()
+        }
     }, 0.1);
     
     if($('.prodct_variant.desktop').length){
