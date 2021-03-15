@@ -392,7 +392,7 @@ $(document).ready(function () {
 
 
             // $(".single-option-selector").val(current_title).change();
-            setTimeout(function(){ hideLoading();}, 500);
+            setTimeout(function(){ hideLoading();}, 1000);
            
         } else if (shop_name == "boat-nirvana.myshopify.com") {
 
