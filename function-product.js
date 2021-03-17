@@ -271,7 +271,7 @@ $(document).on('productDataLoaded', function() {
     }@media (max-width:767.98px) {    .qsb-product__info {        display: none
         }}.qsb-product__info,.qsb-product__media {    -webkit-box-flex: 0;    -ms-flex: 0 1 auto;    flex: 0 1 auto
     }.qsb-product__media {    margin-right: .3em;    text-align: center
-    }.qsb-product__media img {    max-height: 100%; background: #828282 !important;}.qsb-product__title {    margin: .08em 0 .3em;    font-family: inherit;    font-size: 1em;    color: inherit
+    }.qsb-product__media img {    max-height: 100%; background: #828282 !important;border-radius:50%;}.qsb-product__title {    margin: .08em 0 .3em;    font-family: inherit;    font-size: 1em;    color: inherit
     }.qsb-product__price {    margin: 0 0 .1em;    font-size: .875em
     }.qsb-product__current-price+.qsb-product__price-compare-at {    font-size: .75em;    color: #ababab
     }.qsb-form {    -webkit-box-flex: 1;    -ms-flex: 1 1 auto;    flex: 1 1 auto;    display: -webkit-box;    display: -ms-flexbox;    display: flex;    -webkit-box-orient: vertical;    -webkit-box-direction: normal;    -ms-flex-direction: column;    flex-direction: column;    -webkit-box-pack: center;    -ms-flex-pack: center;    justify-content: center;    min-width: 0;    max-width: 75%;    margin: 0 0 0 auto;    padding: 10px
