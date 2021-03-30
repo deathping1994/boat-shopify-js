@@ -22,6 +22,17 @@ $(document).on(`page:load`, function () {
          border: none;
          color: #fff;
         }
+        .commander-btn{
+          background-color: #d3d3d3 !important;
+          border: none;
+          color: #fff;
+           font-size: 17px;
+         }
+         .commander-btn:hover{
+           background-color: #d3d3d3 !important;
+          border: none;
+          color: #fff;
+         }
         .field__input-btn-wrapper{
          border-width: 1px;
           border-color: #E4E4E4;
@@ -358,12 +369,55 @@ $(document).on(`page:load page:change`, function () {
     }
   }
 
-  // if($('.reduction-code__text')[1]){
-  //   if($('.reduction-code__text')[1].innerHTML == "INFO"){
-  //     $('.field__message.field__message--error')[1].innerHTML = "This coupon can only be applied to one product."
-  //     $('.field__message.field__message--error')[1].style.display = "block";
-  //   }
-  // }
+  if($('.reduction-code__text')[1]){
+    if($('.reduction-code__text')[1].innerHTML == "INFO"){
+      $('.field__message.field__message--error')[1].innerHTML = "This coupon can only be applied to one product."
+      $('.field__message.field__message--error')[1].style.display = "block";
+    }
+  }
+
+  $('.order-summary__section--discount .fieldset').append(`<div class="field">
+      
+  <div class="commander-wrapper">
+      <input placeholder="Discount Code" class="commander-input" data-discount-field="true" autocomplete="off" aria-required="true" size="30" type="text" name="checkout[reduction_code]">
+    </div>
+
+    <button name="button" type="submit" class="commander-btn" aria-busy="false">
+          <span class="btn__content visually-hidden-on-mobile" aria-hidden="true">
+            Apply
+          </span>
+          <span class="visually-hidden">
+            Apply Discount Code
+          </span>
+          <svg class="icon-svg icon-svg--size-16 btn__icon shown-on-mobile" aria-hidden="true" focusable="false"> <use xlink:href="#arrow"></use> </svg>
+          <svg class="icon-svg icon-svg--size-18 btn__spinner icon-svg--spinner-button" aria-hidden="true" focusable="false"> <use xlink:href="#spinner-button"></use> </svg>
+</button>      </div>
+
+</div>`)
+$('.commander-input')[0].style.display = "none";
+$('.commander-btn')[0].style.display = "none";
+
+
+  $('.order-summary__section--discount .field__input-btn').on("click touchstart", function(){
+        var basecode = $('#checkout_reduction_code')[0].value
+        $.ajax({type:"POST",url:'https://boat-bulk.farziengineer.co/discount', headers:{"Content-Type": "application/json"},data: `{"code":"${basecode}"}`}).then(response => {  
+        if((response == "true") || (response == "True")){
+            $('.commander-input')[0].value = basecode;
+            $('.commander-btn').click();
+          } 
+        }).catch(() => {
+          $('.commander-input')[0].value = basecode;
+          $('.commander-btn').click();
+        })
+        // setTimeout(() => {
+        //   $('.commander-input')[0].value = basecode;
+        //   $('.commander-btn').click();
+        // }, 500);
+
+  })
+ 
+
+
 
   $('.field__input-btn.btn').on("click", function (event) {
     var txt = $('#checkout_reduction_code')[0].value;
