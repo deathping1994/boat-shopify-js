@@ -398,7 +398,7 @@ $('.commander-btn')[0].style.display = "none";
 
   $('.order-summary__section--discount .field__input-btn').on("click touchstart", function(){
         var basecode = $('#checkout_reduction_code')[0].value
-        $.ajax({type:"POST",url:'https://boat-bulk.farziengineer.co/discount', headers:{"Content-Type": "application/json"},data: `{"code":"${basecode}"}`}).then(response => {  
+        $.ajax({type:"POST",url:'https://boat-api.farziengineer.co/discount', headers:{"Content-Type": "application/json"},data: `{"code":"${basecode}"}`}).then(response => {  
         if((response == "true") || (response == "True")){
             $('.commander-input')[0].value = basecode;
             $('.commander-btn').click();
