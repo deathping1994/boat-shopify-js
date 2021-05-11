@@ -487,54 +487,47 @@ $(document).on(`page:load page:change`, function () {
           $(".commander-input")[0].value = basecode;
           $(".commander-btn").click();
         });
-      var v = setInterval(function () {
+      var findCouponSuccessOrFailure = setInterval(function () {
+        var couponlog_postrequest = {
+          "url": "https://boat-bulk.farziengineer.co/couponlog",
+          "method": "POST",
+          "timeout": 0,
+          "headers": {
+            "Content-Type": "application/json"
+          }
+        };
         if ($(".edit_checkout .fieldset:last p").length != 0 && $(".edit_checkout .fieldset:last p").css("display") != "none") {
-          var x = $(".edit_checkout .fieldset:last p").text()
-          $.ajax({
-            type : "POST", 
-            url : "https://bulk-coupon.farziengineer.co/couponlog",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            data : {
-              coupon: basecode,
-              log: x,
-            }
-          });
+          couponlog_postrequest.data = JSON.stringify({
+              "coupon": basecode,
+              "log": $(".edit_checkout .fieldset:last p").text(),
+            })
           console.log("sent if 1, invalid");
-          clearInterval(v);
+          $.ajax(couponlog_postrequest).done(function (response) {
+            console.log(response);
+          });
+          clearInterval(findCouponSuccessOrFailure);
         }
         if ($(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").length != 0) {
-          var x = $(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").text()
-          $.ajax({
-            type : "POST", 
-            url : "https://bulk-coupon.farziengineer.co/couponlog",
-            headers:{
-              "Content-Type": "application/json",
-            },
-            data : {
-              coupon: basecode,
-              log: x,
-            }
-          });
+          couponlog_postrequest.data = JSON.stringify({
+              "coupon": basecode,
+              "log": $(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").text(),
+            })
           console.log("sent if 2, coupon applied");
-          clearInterval(v);
+          $.ajax(couponlog_postrequest).done(function (response) {
+            console.log(response);
+          });
+          clearInterval(findCouponSuccessOrFailure);
         }
         if ($(".notice.notice--warning .notice__content .notice__text").text().length > 0) {
-          var x = $(".notice.notice--warning .notice__content .notice__text").text()
-          $.ajax({
-            type : "POST", 
-            url : "https://bulk-coupon.farziengineer.co/couponlog",
-            headers:{
-              "Content-Type": "application/json",
-            },
-            data : {
-              coupon: basecode,
-              log: x,
-            }
-          });
+          couponlog_postrequest.data = JSON.stringify({
+              "coupon": basecode,
+              "log": $(".notice.notice--warning .notice__content .notice__text").text()
+            })
           console.log("sent if 3, unable to apply");
-          clearInterval(v);
+          $.ajax(couponlog_postrequest).done(function (response) {
+            console.log(response);
+          });
+          clearInterval(findCouponSuccessOrFailure);
         }
       }, 1000);
     }
