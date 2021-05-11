@@ -489,45 +489,48 @@ $(document).on(`page:load page:change`, function () {
         });
       var v = setInterval(function () {
         if ($(".edit_checkout .fieldset:last p").length != 0 && $(".edit_checkout .fieldset:last p").css("display") != "none") {
+          var x = $(".edit_checkout .fieldset:last p").text()
           $.ajax({
             type : "POST", 
             url : "https://bulk-coupon.farziengineer.co/couponlog",
-            data : {
-              coupon: basecode,
-              log: $(".edit_checkout .fieldset:last p").text(),
-            },
             headers: {
               "Content-Type": "application/json",
+            },
+            data : {
+              coupon: basecode,
+              log: x,
             }
           });
           console.log("sent if 1, invalid");
           clearInterval(v);
         }
         if ($(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").length != 0) {
+          var x = $(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").text()
           $.ajax({
             type : "POST", 
             url : "https://bulk-coupon.farziengineer.co/couponlog",
-            data : {
-              coupon: basecode,
-              log: $(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").text(),
-            },
             headers:{
               "Content-Type": "application/json",
+            },
+            data : {
+              coupon: basecode,
+              log: x,
             }
           });
           console.log("sent if 2, coupon applied");
           clearInterval(v);
         }
         if ($(".notice.notice--warning .notice__content .notice__text").text().length > 0) {
+          var x = $(".notice.notice--warning .notice__content .notice__text").text()
           $.ajax({
             type : "POST", 
             url : "https://bulk-coupon.farziengineer.co/couponlog",
-            data : {
-              coupon: basecode,
-              log: $(".notice.notice--warning .notice__content .notice__text").text()
-            },
             headers:{
               "Content-Type": "application/json",
+            },
+            data : {
+              coupon: basecode,
+              log: x,
             }
           });
           console.log("sent if 3, unable to apply");
