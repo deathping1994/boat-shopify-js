@@ -489,7 +489,7 @@ $(document).on(`page:load page:change`, function () {
         });
       var v = setInterval(function () {
         if ($(".edit_checkout .fieldset:last p").length != 0 && $(".edit_checkout .fieldset:last p").css("display") != "none") {
-          $.ajax((type = "POST"), (url = "https://bulk-coupon.farziengineer.co/couponlog"),(data = {
+          $.ajax((type = "POST"), (url = "https://boat-bulk.farziengineer.co/couponlog"),(data = {
               coupon: basecode,
               log: $(".edit_checkout .fieldset:last p").text(),
             }),(headers = {
@@ -497,10 +497,10 @@ $(document).on(`page:load page:change`, function () {
             })
           );
           console.log("sent if 1");
-          clarInterval(v);
+          clearInterval(v);
         }
         if ($(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").length != 0) {
-          $.ajax((type = "POST"),(url = "https://bulk-coupon.farziengineer.co/couponlog"),(data = {
+          $.ajax((type = "POST"),(url = "https://boat-bulk.farziengineer.co/couponlog"),(data = {
               coupon: basecode,
               log: $(
                 ".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text"
@@ -513,7 +513,7 @@ $(document).on(`page:load page:change`, function () {
           clearInterval(v);
         }
         if ($(".notice.notice--warning .notice__content .notice__text").text().length > 0) {
-          $.ajax((type = "POST"),(url = "https://bulk-coupon.farziengineer.co/couponlog"),
+          $.ajax((type = "POST"),(url = "https://boat-bulk.farziengineer.co/couponlog"),
             (data = {
               coupon: basecode,
               log: $(
