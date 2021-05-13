@@ -404,7 +404,8 @@ $(document).on(`page:load`, function () {
   })
   
   
-    $('.order-summary__section--discount .field__input-btn').on("click touchstart", function(){
+    $('.order-summary__section--discount .field__input-btn').on("click touchstart", function(event){
+          event.preventDefault();
           var basecode = $('#checkout_reduction_code')[0].value
           $.ajax({type:"POST",url: 'https://boat-api.farziengineer.co/discount', headers:{"Content-Type": "application/json"},data: `{"code":"${basecode}", "cartId":"${token}"}`}).then(response => {  
           if((response == "true") || (response == "True")){
@@ -415,31 +416,10 @@ $(document).on(`page:load`, function () {
             $('.commander-input')[0].value = basecode;
             $('.commander-btn').click();
           })
-          // setTimeout(() => {
-          //   $('.commander-input')[0].value = basecode;
-          //   $('.commander-btn').click();
-          // }, 500);
   
     })
 
-    if($('.section__content .field__input-btn').length>0){
-        $("#error-for-reduction_code").attr( "style", "display: none !important;" )
-        setTimeout(function(){
-            $("#error-for-reduction_code").removeAttr('style')
-        }, 4000);
-        $('.section__content .field__input-btn').on("click touchstart", function(){
-        var basecode = $('#checkout_reduction_code_mobile')[0].value
-        $.ajax({type:"POST",url: 'https://boat-api.farziengineer.co/discount', headers:{"Content-Type": "application/json"},data: `{"code":"${basecode}", "cartId":"${token}"}`}).then(response => {  
-        if((response == "true") || (response == "True")){
-            $('.commander-input')[0].value = basecode;
-            $('.commander-btn').click();
-          } 
-        }).catch(() => {
-          $('.commander-input')[0].value = basecode;
-          $('.commander-btn').click();
-        })
-
-  })}
+ 
    
   
   
