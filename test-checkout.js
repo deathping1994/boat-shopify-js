@@ -432,7 +432,6 @@ $.get('/cart.js').then(response => {
                     else if($('.tags-list .tag .tag__wrapper .reduction-code .reduction-code__text').length !=0){console.log($('.tags-list .tag .tag__wrapper .reduction-code .reduction-code__text').text());clearInterval(v);}
                 },1000)
                 }, 2000);
-          } 
         })
   })
 
