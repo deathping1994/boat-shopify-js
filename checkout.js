@@ -418,6 +418,10 @@ $.get('/cart.js').then(response => {
   })
   
   if($('.section__content .field__input-btn').length>0){
+        $("#error-for-reduction_code").attr( "style", "display: none !important;" )
+        setTimeout(function(){
+            $("#error-for-reduction_code").removeAttr('style')
+        }, 4000);
         $('.section__content .field__input-btn').on("click touchstart", function(){
         var basecode = $('#checkout_reduction_code_mobile')[0].value
         $.ajax({type:"POST",url: 'https://boat-api.farziengineer.co/discount', headers:{"Content-Type": "application/json"},data: `{"code":"${basecode}", "cartId":"${token}"}`}).then(response => {  
