@@ -1,4 +1,4 @@
-// $(document).on('productDataLoaded', function() {
+$(document).on('productDataLoaded', function() {
     
 //     function isElementInViewport(el) {
 //         if (typeof jQuery === "function" && el instanceof jQuery) {
@@ -364,7 +364,8 @@
 //           }).forEach(li => ul.appendChild(li));
        
 //        };
+    console.log('stickycart')
     
-//      $(document).trigger("stickyCartLoaded");
+     $(document).trigger("stickyCartLoaded");
    
-// });
+});
