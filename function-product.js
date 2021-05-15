@@ -101,6 +101,11 @@ function showLoading() {
 function hideLoading() {
   $(".loading").hide();
 }
+var ul = document.getElementsByClassName("prodct_variant")[0];
+	  Array.from(ul.getElementsByTagName("LI"))
+          .sort((a, b) => {
+            return parseInt(b.dataset.qty) - parseInt(a.dataset.qty)
+          }).forEach(li => ul.appendChild(li));
 
 $(document).on("productDataLoaded", function () {
   function isElementInViewport(el) {
@@ -407,7 +412,7 @@ $(document).on("productDataLoaded", function () {
           $(item).attr("selected", "selected");
         }
       });
-      if ($(".current-price.theme-money")[0].innerHTML) {
+      if ($(".current-price.theme-money").length != 0) {
         setTimeout(() => {
           $(".qsb-product__current-price")[0].innerHTML = $(
             ".current-price.theme-money"
