@@ -255,6 +255,7 @@ $(document).on(`page:load`, function () {
   $(".field__input-btn-wrapper:last").css("border","none");
   $("#checkout_reduction_code").css("border","1px solid #797979");
   $(".field__input-btn-wrapper .field__input-btn:last").attr('style', 'background-color: #717171 !important;');
+  
 });
 
 $(document).on(`page:load page:change`, function () {
@@ -439,7 +440,7 @@ $.get('/cart.js').then(response => {
                   });
 //                   $.ajax(couponlog_postrequest).done(function (response) {
 //                     console.log(response);
-//                   });
+                  });
                   clearInterval(v);
                 } 
                 else if ($(".notice.notice--warning .notice__content .notice__text").text().length > 0) {
@@ -514,6 +515,7 @@ $.get('/cart.js').then(response => {
         });
     }
   );
+
   $('.field__input-btn.btn').on("click", function (event) {
     var txt = $('#checkout_reduction_code')[0].value;
     var code = new RegExp('[Ii][Nn][Ff][Oo][0-9a-zA-Z]+$')
