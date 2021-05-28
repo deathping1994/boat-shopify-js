@@ -313,6 +313,18 @@ $(document).on(`page:load page:change`, function () {
       $('#continue_button').removeAttr('style');
     }
   });
+  
+  $("input").on('blur input', function() {
+    if( ($("#checkout_shipping_address_phone").val().length > 10) || ($("#checkout_shipping_address_phone").val().length < 0)){
+      $('#continue_button').attr('disabled', true);
+      $('#continue_button').css('background-color', '#bdbdbd');
+    }
+    else{
+        $('#continue_button').removeAttr('disabled');
+        $('#continue_button').removeAttr('style');
+      }
+    });
+  
   if($('.reduction-code__text').last()[0]){
     var txt = $('.reduction-code__text').last()[0].innerHTML; 
     var code = new RegExp('[Ii][Nn][Ff][Oo][0-9a-zA-Z]+$')
