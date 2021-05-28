@@ -318,10 +318,15 @@ $(document).on(`page:load page:change`, function () {
     if( ($("#checkout_shipping_address_phone").val().length > 10) || ($("#checkout_shipping_address_phone").val().length < 0)){
       $('#continue_button').attr('disabled', true);
       $('#continue_button').css('background-color', '#bdbdbd');
+      if($('.address-fields :nth-child(18) p').length < 1){
+        $('.address-fields :nth-child(18) .field__input-wrapper').after(`<p style="color:#e32c2b">Please enter correct phone number</p>`);
+      }
+      $('.address-fields :nth-child(18) p').show()
     }
     else{
         $('#continue_button').removeAttr('disabled');
         $('#continue_button').removeAttr('style');
+      $('.address-fields :nth-child(18) p').hide()
       }
     });
   
