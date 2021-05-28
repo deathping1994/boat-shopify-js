@@ -314,7 +314,7 @@ $(document).on(`page:load page:change`, function () {
     }
   });
   
-  $(".step__sections. input").on('blur input', function() {
+  $(".step__sections input").on('blur input', function() {
     if( ($("#checkout_shipping_address_phone").val().length > 10) || ($("#checkout_shipping_address_phone").val().length < 0)){
       $('#continue_button').attr('disabled', true);
       $('#continue_button').css('background-color', '#bdbdbd');
