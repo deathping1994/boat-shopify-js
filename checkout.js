@@ -315,7 +315,13 @@ $(document).on(`page:load page:change`, function () {
   });
   
   $(".step__sections input").on('blur input', function() {
-    if( ($("#checkout_shipping_address_phone").val().length > 10) || ($("#checkout_shipping_address_phone").val().length < 0)){
+    var phoneno = /^\d{10}$/;
+    if($("#checkout_shipping_address_phone").val().match(phoneno)){
+      $('#continue_button').removeAttr('disabled');
+      $('#continue_button').removeAttr('style');
+      $('.address-fields :nth-child(18) p').hide()
+    }
+    else{
       $('#continue_button').attr('disabled', true);
       $('#continue_button').css('background-color', '#bdbdbd');
       if($('.address-fields :nth-child(18) p').length < 1){
@@ -323,12 +329,7 @@ $(document).on(`page:load page:change`, function () {
       }
       $('.address-fields :nth-child(18) p').show()
     }
-    else{
-        $('#continue_button').removeAttr('disabled');
-        $('#continue_button').removeAttr('style');
-      $('.address-fields :nth-child(18) p').hide()
-      }
-    });
+  });
   
   if($('.reduction-code__text').last()[0]){
     var txt = $('.reduction-code__text').last()[0].innerHTML; 
