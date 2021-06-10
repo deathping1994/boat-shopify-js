@@ -330,6 +330,7 @@ $(document).on(`page:load page:change`, function () {
         }
         $('.address-fields :nth-child(18) p').show()
       }
+    }
   });
   
   if($('.reduction-code__text').last()[0]){
