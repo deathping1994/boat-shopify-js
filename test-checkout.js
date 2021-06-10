@@ -316,19 +316,20 @@ $(document).on(`page:load page:change`, function () {
   
   $(".step__sections input").on('blur input', function() {
     var phoneno = /^\d{10}$/;
-    if($("#checkout_shipping_address_phone").val().match(phoneno)){
-      $('#continue_button').removeAttr('disabled');
-      $('#continue_button').removeAttr('style');
-      $('.address-fields :nth-child(18) p').hide()
-    }
-    else{
-      $('#continue_button').attr('disabled', true);
-      $('#continue_button').css('background-color', '#bdbdbd');
-      if($('.address-fields :nth-child(18) p').length < 1){
-        $('.address-fields :nth-child(18) .field__input-wrapper').after(`<p style="color:#e32c2b">Please enter correct phone number</p>`);
+    if($("#checkout_shipping_address_phone").length>0){
+      if($("#checkout_shipping_address_phone").val().match(phoneno)){
+        $('#continue_button').removeAttr('disabled');
+        $('#continue_button').removeAttr('style');
+        $('.address-fields :nth-child(18) p').hide()
       }
-      $('.address-fields :nth-child(18) p').show()
-    }
+      else{
+        $('#continue_button').attr('disabled', true);
+        $('#continue_button').css('background-color', '#bdbdbd');
+        if($('.address-fields :nth-child(18) p').length < 1){
+          $('.address-fields :nth-child(18) .field__input-wrapper').after(`<p style="color:#e32c2b">Please enter correct phone number</p>`);
+        }
+        $('.address-fields :nth-child(18) p').show()
+      }
   });
   
   if($('.reduction-code__text').last()[0]){
@@ -541,7 +542,7 @@ $.get('/cart.js').then(response => {
         type: "POST",
         url: "https://boat-api.farziengineer.co/discount",
         headers: { "Content-Type": "application/json" },
-        data: `{"code":"${basecode}", "cartId":"121212121"}`,
+        data: `{"code":"${basecode}", "cartId":"${token}"}`,
       }).then((response) => {
           if (response == "true" || response == "True") {
             $(".commander-input")[0].value = basecode;
