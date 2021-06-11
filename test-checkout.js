@@ -262,9 +262,16 @@ $(document).on(`page:load page:change`, function () {
   
   $('#checkout_reduction_code').on('input', function () {
     if ($('#checkout_reduction_code').length > 0 && $('#checkout_reduction_code').val() != '') {
-      $('.field__input-btn').attr('style', 'background : #ea2127 !important')
+      $('.order-summary__sections .field__input-btn').attr('style', 'background : #ea2127 !important')
     }
-    else { $('.field__input-btn').attr('style', 'background :#d3d3d3 !important') }
+    else { $('.order-summary__sections .field__input-btn').attr('style', 'background :#d3d3d3 !important') }
+  });
+  
+  $('#checkout_reduction_code_mobile').on('input', function () {
+    if ($('#checkout_reduction_code_mobile').length > 0 && $('#checkout_reduction_code_mobile').val() != '') {
+      $('.section__content .field__input-btn').attr('style', 'background : #ea2127 !important')
+    }
+    else { $('.section__content .field__input-btn').attr('style', 'background :#d3d3d3 !important') }
   });
 
   $('#checkout_shipping_address_phone').removeAttr('data-phone-formatter');
