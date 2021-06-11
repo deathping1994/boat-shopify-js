@@ -249,6 +249,10 @@ $(document).on(`page:load`, function () {
   $("#checkout_reduction_code").attr("placeholder", "Discount Code");
   $(".link--small").html("<img class='plus-img' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM4My45NDcgMzgzLjk0NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8Zz4KCQkJPHBvbHlnb24gcG9pbnRzPSIwLDMwMy45NDcgMCwzODMuOTQ3IDgwLDM4My45NDcgMzE2LjA1MywxNDcuODkzIDIzNi4wNTMsNjcuODkzICAgICIgZmlsbD0iI2VkMWQyNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wb2x5Z29uPgoJCQk8cGF0aCBkPSJNMzc3LjcwNyw1Ni4wNTNMMzI3Ljg5Myw2LjI0Yy04LjMyLTguMzItMjEuODY3LTguMzItMzAuMTg3LDBsLTM5LjA0LDM5LjA0bDgwLDgwbDM5LjA0LTM5LjA0ICAgICBDMzg2LjAyNyw3Ny45MiwzODYuMDI3LDY0LjM3MywzNzcuNzA3LDU2LjA1M3oiIGZpbGw9IiNlZDFkMjYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCQk8L2c+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==' />");
   
+});
+
+$(document).on(`page:load page:change`, function () {
+  
   $(".order-summary-toggle__text.order-summary-toggle__text--hide").css("font-size","18px");
   $(".order-summary-toggle__text.order-summary-toggle__text--show").css("font-size","18px");
   $(".fieldset h2.offer").text("Apply Coupon Code");
@@ -256,15 +260,18 @@ $(document).on(`page:load`, function () {
   $("#checkout_reduction_code").css("border","1px solid #797979");
   $(".field__input-btn-wrapper .field__input-btn:last").attr('style', 'background-color: #717171 !important;');
   
-});
-
-$(document).on(`page:load page:change`, function () {
-
   $('#checkout_reduction_code').on('input', function () {
     if ($('#checkout_reduction_code').length > 0 && $('#checkout_reduction_code').val() != '') {
-      $('.field__input-btn').attr('style', 'background : #ea2127 !important')
+      $('.order-summary__sections .field__input-btn').attr('style', 'background : #ea2127 !important')
     }
-    else { $('.field__input-btn').attr('style', 'background :#d3d3d3 !important') }
+    else { $('.order-summary__sections .field__input-btn').attr('style', 'background :#d3d3d3 !important') }
+  });
+  
+  $('#checkout_reduction_code_mobile').on('input', function () {
+    if ($('#checkout_reduction_code_mobile').length > 0 && $('#checkout_reduction_code_mobile').val() != '') {
+      $('.section__content .field__input-btn').attr('style', 'background : #ea2127 !important')
+    }
+    else { $('.section__content .field__input-btn').attr('style', 'background :#d3d3d3 !important') }
   });
 
   $('#checkout_shipping_address_phone').removeAttr('data-phone-formatter');
@@ -313,6 +320,26 @@ $(document).on(`page:load page:change`, function () {
       $('#continue_button').removeAttr('style');
     }
   });
+  
+  $(".step__sections input").on('blur input', function() {
+    var phoneno = /^\d{10}$/;
+    if($("#checkout_shipping_address_phone").length>0){
+      if($("#checkout_shipping_address_phone").val().match(phoneno)){
+        $('#continue_button').removeAttr('disabled');
+        $('#continue_button').removeAttr('style');
+        $('.address-fields :nth-child(18) p').hide()
+      }
+      else{
+        $('#continue_button').attr('disabled', true);
+        $('#continue_button').css('background-color', '#bdbdbd');
+        if($('.address-fields :nth-child(18) p').length < 1){
+          $('.address-fields :nth-child(18) .field__input-wrapper').after(`<p style="color:#e32c2b">Please enter correct phone number</p>`);
+        }
+        $('.address-fields :nth-child(18) p').show()
+      }
+    }
+  });
+  
   if($('.reduction-code__text').last()[0]){
     var txt = $('.reduction-code__text').last()[0].innerHTML; 
     var code = new RegExp('[Ii][Nn][Ff][Oo][0-9a-zA-Z]+$')
@@ -438,8 +465,8 @@ $.get('/cart.js').then(response => {
                     coupon: basecode,
                     log: $(".edit_checkout .fieldset:last p").text(),
                   });
-//                   $.ajax(couponlog_postrequest).done(function (response) {
-//                     console.log(response);
+                  $.ajax(couponlog_postrequest).done(function (response) {
+                    console.log(response);
                   });
                   clearInterval(v);
                 } 
@@ -448,9 +475,9 @@ $.get('/cart.js').then(response => {
                     coupon: basecode,
                     log: $(".notice.notice--warning .notice__content .notice__text").text(),
                   });
-//                   $.ajax(couponlog_postrequest).done(function (response) {
-//                     console.log(response);
-//                   });
+                  $.ajax(couponlog_postrequest).done(function (response) {
+                    console.log(response);
+                  });
                   clearInterval(v);
                 } 
                 else if ($(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").length != 0) {
@@ -458,9 +485,9 @@ $.get('/cart.js').then(response => {
                     coupon: basecode,
                     log: $(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").text(),
                   });
-//                   $.ajax(couponlog_postrequest).done(function (response) {
-//                     console.log(response);
-//                   });
+                  $.ajax(couponlog_postrequest).done(function (response) {
+                    console.log(response);
+                  });
                   clearInterval(v);
                 }
               }, 1000);
@@ -485,9 +512,9 @@ $.get('/cart.js').then(response => {
                   coupon: basecode,
                   log: $(".edit_checkout .fieldset:last p").text(),
                 });
-//                 $.ajax(couponlog_postrequest).done(function (response) {
-//                   console.log(response);
-//                 });
+                $.ajax(couponlog_postrequest).done(function (response) {
+                  console.log(response);
+                });
                 clearInterval(v);
               } 
               else if ($(".notice.notice--warning .notice__content .notice__text").text().length > 0) {
@@ -495,9 +522,9 @@ $.get('/cart.js').then(response => {
                   coupon: basecode,
                   log: $(".notice.notice--warning .notice__content .notice__text").text(),
                 });
-//                 $.ajax(couponlog_postrequest).done(function (response) {
-//                   console.log(response);
-//                 });
+                $.ajax(couponlog_postrequest).done(function (response) {
+                  console.log(response);
+                });
                 clearInterval(v);
               } 
               else if ($(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").length != 0) {
@@ -505,9 +532,9 @@ $.get('/cart.js').then(response => {
                   coupon: basecode,
                   log: $(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").text(),
                 });
-//                 $.ajax(couponlog_postrequest).done(function (response) {
-//                   console.log(response);
-//                 });
+                $.ajax(couponlog_postrequest).done(function (response) {
+                  console.log(response);
+                });
                 clearInterval(v);
               }
             }, 1000);
@@ -516,6 +543,113 @@ $.get('/cart.js').then(response => {
     }
   );
 
+  $(".edit_checkout .field__input-btn.btn").eq(0).on("click touchstart",function (event) {
+      event.preventDefault();
+      var basecode = $("#checkout_reduction_code_mobile")[0].value;
+      $.ajax({
+        type: "POST",
+        url: "https://boat-api.farziengineer.co/discount",
+        headers: { "Content-Type": "application/json" },
+        data: `{"code":"${basecode}", "cartId":"${token}"}`,
+      }).then((response) => {
+          if (response == "true" || response == "True") {
+            $(".commander-input")[0].value = basecode;
+            $(".commander-btn").click();
+            console.log("discount api");
+            setTimeout(function () {
+              var couponlog_postrequest = {
+                url: "https://boat-api.farziengineer.co/couponlog",
+                method: "POST",
+                timeout: 0,
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              };
+              var v = setInterval(function () {
+                if ($(".edit_checkout .fieldset:last p").length != 0 && $(".edit_checkout .fieldset:last p").css("display") != "none") {
+                  couponlog_postrequest.data = JSON.stringify({
+                    coupon: basecode,
+                    log: $(".edit_checkout .fieldset:last p").text(),
+                  });
+                  $.ajax(couponlog_postrequest).done(function (response) {
+                    console.log(response);
+                  });
+                  clearInterval(v);
+                } 
+                else if ($(".notice.notice--warning .notice__content .notice__text").text().length > 0) {
+                  couponlog_postrequest.data = JSON.stringify({
+                    coupon: basecode,
+                    log: $(".notice.notice--warning .notice__content .notice__text").text(),
+                  });
+                  $.ajax(couponlog_postrequest).done(function (response) {
+                    console.log(response);
+                  });
+                  clearInterval(v);
+                } 
+                else if ($(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").length != 0) {
+                  couponlog_postrequest.data = JSON.stringify({
+                    coupon: basecode,
+                    log: $(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").text(),
+                  });
+                  $.ajax(couponlog_postrequest).done(function (response) {
+                    console.log(response);
+                  });
+                  clearInterval(v);
+                }
+              }, 1000);
+            }, 3000);
+        }})
+        .catch(() => {
+          $(".commander-input")[0].value = basecode;
+          $(".commander-btn").click();
+          console.log("discount api")
+        setTimeout(function () {
+            var couponlog_postrequest = {
+              url: "https://boat-api.farziengineer.co/couponlog",
+              method: "POST",
+              timeout: 0,
+              headers: {
+                "Content-Type": "application/json",
+              },
+            };
+            var v = setInterval(function () {
+              if ($(".edit_checkout .fieldset:last p").length != 0 && $(".edit_checkout .fieldset:last p").css("display") != "none") {
+                couponlog_postrequest.data = JSON.stringify({
+                  coupon: basecode,
+                  log: $(".edit_checkout .fieldset:last p").text(),
+                });
+                $.ajax(couponlog_postrequest).done(function (response) {
+                  console.log(response);
+                });
+                clearInterval(v);
+              } 
+              else if ($(".notice.notice--warning .notice__content .notice__text").text().length > 0) {
+                couponlog_postrequest.data = JSON.stringify({
+                  coupon: basecode,
+                  log: $(".notice.notice--warning .notice__content .notice__text").text(),
+                });
+                $.ajax(couponlog_postrequest).done(function (response) {
+                  console.log(response);
+                });
+                clearInterval(v);
+              } 
+              else if ($(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").length != 0) {
+                couponlog_postrequest.data = JSON.stringify({
+                  coupon: basecode,
+                  log: $(".tags-list .tag .tag__wrapper .reduction-code .reduction-code__text").text(),
+                });
+                $.ajax(couponlog_postrequest).done(function (response) {
+                  console.log(response);
+                });
+                clearInterval(v);
+              }
+            }, 1000);
+          }, 3000);
+        });
+    
+});
+  
+  
   $('.field__input-btn.btn').on("click", function (event) {
     var txt = $('#checkout_reduction_code')[0].value;
     var code = new RegExp('[Ii][Nn][Ff][Oo][0-9a-zA-Z]+$')
