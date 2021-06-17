@@ -31,7 +31,7 @@ $(document).ready(function () {
   $(".activevar").click();
   setTimeout(function () {
     hideLoading();
-  }, 100);
+  }, 1);
 
   $(document).trigger("productDataLoaded");
 
