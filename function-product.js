@@ -29,9 +29,9 @@ $(document).ready(function () {
   $(".product-main-poh").show();
 
   $(".activevar").click();
-  setTimeout(function () {
-    hideLoading();
-  }, 100);
+  // setTimeout(function () {
+  //   hideLoading();
+  // }, 100);
 
   $(document).trigger("productDataLoaded");
 
@@ -102,10 +102,11 @@ function hideLoading() {
   $(".loading").hide();
 }
 var ul = document.getElementsByClassName("prodct_variant")[0];
-	  Array.from(ul.getElementsByTagName("LI"))
-          .sort((a, b) => {
-            return parseInt(b.dataset.qty) - parseInt(a.dataset.qty)
-          }).forEach(li => ul.appendChild(li));
+Array.from(ul.getElementsByTagName("LI"))
+  .sort((a, b) => {
+    return parseInt(b.dataset.qty) - parseInt(a.dataset.qty);
+  })
+  .forEach((li) => ul.appendChild(li));
 
 $(document).on("productDataLoaded", function () {
   function isElementInViewport(el) {
