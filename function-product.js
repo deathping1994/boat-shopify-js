@@ -53,7 +53,7 @@ $(document).ready(function () {
           .trigger("click");
         setTimeout(function () {
           hideLoading();
-        }, 100);
+        }, 300);
       } else if (shop_name == "boat-nirvana.myshopify.com") {
         $(".veriant_sect").removeClass("activevar");
         $(this).addClass("activevar");
