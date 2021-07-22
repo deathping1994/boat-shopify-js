@@ -43,7 +43,7 @@ $(document).ready(function () {
         $(".poh_variant,.veriant_sect").removeClass("activevar");
         $(this).addClass("activevar");
 //         showLoading();
-        console.log("showLoading();")
+//         console.log("showLoading();")
         var current_variant = $(this).attr("id");
         var current_title = $(this).attr("title");
         $(".product-variation")
@@ -52,10 +52,10 @@ $(document).ready(function () {
         $(".clickyboxes")
           .find('a[data-value="' + current_title + '"]')
           .trigger("click");
-        setTimeout(function () {
+//         setTimeout(function () {
 //           hideLoading();
-             console.log("hideLoading();")
-        }, 500);
+//              console.log("hideLoading();")
+//         }, 500);
       } else if (shop_name == "boat-nirvana.myshopify.com") {
         $(".veriant_sect").removeClass("activevar");
         $(this).addClass("activevar");
