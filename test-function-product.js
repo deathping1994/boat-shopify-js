@@ -42,7 +42,8 @@ $(document).ready(function () {
       if (shop_name == "boatlifestylein.myshopify.com") {
         $(".poh_variant,.veriant_sect").removeClass("activevar");
         $(this).addClass("activevar");
-        showLoading();
+//         showLoading();
+        console.log("showLoading();")
         var current_variant = $(this).attr("id");
         var current_title = $(this).attr("title");
         $(".product-variation")
@@ -52,7 +53,8 @@ $(document).ready(function () {
           .find('a[data-value="' + current_title + '"]')
           .trigger("click");
         setTimeout(function () {
-          hideLoading();
+//           hideLoading();
+             console.log("hideLoading();")
         }, 500);
       } else if (shop_name == "boat-nirvana.myshopify.com") {
         $(".veriant_sect").removeClass("activevar");
