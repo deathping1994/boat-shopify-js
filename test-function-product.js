@@ -434,7 +434,7 @@ $(document).on("productDataLoaded", function () {
   );
 
   $(document).on(
-    "click touchstart",
+    "click touchend",
     ".qikify-stickycart-app .mobile",
     function (e) {
       if (this.classList.contains("hello")) {
