@@ -213,19 +213,19 @@ if(Shopify.Checkout.step=="contact_information"){
                 var inputPincode = parseInt($('#checkout_billing_address_zip').val());
                 if ($.inArray(inputPincode,pincodes) === -1) {
                 $('.address-fields :nth-child(18)').eq(2).addClass('field--error');
-                if ($('.address-fields :nth-child(17) p').length == 0) {
-                    $('.address-fields :nth-child(17) div').after(`<p class="field__message field__message--error" id="error-for-zip" style="padding:0px">Sorry, we don't deliver to this pincode.</p>`);
+                if ($('.address-fields :nth-child(18) p').length == 0) {
+                    $('.address-fields :nth-child(18) div').after(`<p class="field__message field__message--error" id="error-for-zip" style="padding:0px">Sorry, we don't deliver to this pincode.</p>`);
                 }
                 $('#continue_button').attr('disabled', true);
                 $('#continue_button').css('background-color', '#bdbdbd');
                 }
                 else {
-                $('.address-fields :nth-child(17) ').removeClass('field--error');
+                $('.address-fields :nth-child(18) ').removeClass('field--error');
                 $('#continue_button').removeAttr('disabled');
                 $('#continue_button').css('background-color', 'red');
                 }
                 if (!inputPincode) {
-                $('.address-fields :nth-child(17) ').removeClass('field--error');
+                $('.address-fields :nth-child(18) ').removeClass('field--error');
                 $('#continue_button').removeAttr('disabled');
                 $('#continue_button').css('background-color', 'red');
                 }
