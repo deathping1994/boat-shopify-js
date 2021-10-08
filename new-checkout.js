@@ -103,27 +103,23 @@ $(document).on(`page:load page:change`, function () {
                     $('#continue_button').attr('disabled', true);
                     $('#continue_button').css('background-color', '#bdbdbd');
                     if($('.address-fields :nth-child(15) p').length < 1){
-                    $('.address-fields :nth-child(15) .field__input-wrapper').after(`<p style="color:#e32c2b;padding:0px">Please enter correct phone number</p>`);
+                    $('.address-fields :nth-child(15) .field__input-wrapper').after(`<p style="color:#e32c2b;padding:0px;padding-left: 6px;">Please enter correct phone number</p>`);
                     }
                     $('.address-fields :nth-child(15) p').show()
                 }
                 }
 
                 if($("#checkout_billing_address_phone").length>0){
-                    console.log("phone check")
                     if($("#checkout_billing_address_phone").val().match(phoneno)){
-                        console.log("phone match")
                     $('#continue_button').removeAttr('disabled');
                     $('#continue_button').css('background-color', 'red');
                     $('.address-fields :nth-child(15) p').hide()
                     }
                     else{
-                        console.log("phone mis-match")
                     $('#continue_button').attr('disabled', true);
                     $('#continue_button').css('background-color', '#bdbdbd');
                     if($('.address-fields :nth-child(15) p').length < 1){
-                        console.log("phone mis-match errorlog")
-                        $('.address-fields :nth-child(15) .field__input-wrapper').after(`<p style="color:#e32c2b;padding:0px">Please enter correct phone number</p>`);
+                        $('.address-fields :nth-child(15) .field__input-wrapper').after(`<p style="color:#e32c2b;padding:0px;padding-left: 6px;">Please enter correct phone number</p>`);
                     }
                     $('.address-fields :nth-child(15) p').show()
                     }
