@@ -127,8 +127,4 @@ $(document).on(`page:load page:change`, function () {
             });
          }, 3000);
     
-    $('input[type=radio]').change(function() {
-        $(".section.section--billing-address").hide()
-    });
-    
 });
