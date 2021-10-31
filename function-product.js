@@ -510,7 +510,7 @@ $(document).on("productDataLoaded", function () {
 
   $("#sticky_add_to_cart").click(function (event) {
     event.preventDefault();
-    $(".product-form").find("form").submit();
+    $("#add_to_cart").click()
   });
 
   $(".slick-slide").each(function () {
